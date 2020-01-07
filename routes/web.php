@@ -17,4 +17,5 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'admin'], function() {
     Route::get('portfolio/create', 'Admin\NewsController@add')->middleware('auth');
+    Route::post('portfolio/create', 'Admin\portfolioController@create');
 });
