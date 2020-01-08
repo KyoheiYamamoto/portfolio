@@ -19,3 +19,7 @@ Route::group(['prefix' => 'admin'], function() {
     Route::get('portfolio/create', 'Admin\portfolioController@add')->middleware('auth');
     Route::post('portfolio/create', 'Admin\portfolioController@create');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
