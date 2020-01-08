@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admin'], function() {
     Route::get('portfolio/create', 'Admin\portfolioController@add')->middleware('auth');
     Route::post('portfolio/create', 'Admin\portfolioController@create');
+    Route::get('news', 'Admin\portfolioController@index')->middleware('auth'); // 追記
 });
 
 Auth::routes();
