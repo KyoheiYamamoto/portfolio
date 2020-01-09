@@ -15,7 +15,7 @@ class portfolioController extends Controller
   {
     $this->validate($request, portfolios::$rules);
 
-      $portfolios = new News;
+      $portfolios = new portfolios;
       $form = $request->all();
 
       // フォームから画像が送信されてきたら、保存して、$news->image_path に画像のパスを保存する
@@ -50,5 +50,34 @@ class portfolioController extends Controller
           $posts = portfolios::all();
       }
       return view('admin.portfolio.index', ['posts' => $posts, 'cond_title' => $cond_title]);
+  }
+  
+  // 以下を追記
+
+  public function edit(Request $request)
+  {
+      // News Modelからデータを取得する
+      $portfolios = portfolios::find($request->id);
+      if (empty($portfolios)) {
+        abort(404);    
+      }
+      return view('admin.portfolios.edit', ['portfolios_form' => $portfolios]);
+  }
+
+
+  public function update(Request $request)
+  {
+      // Validationをかける
+      $this->validate($request, portfolios::$rules);
+      // News Modelからデータを取得する
+      $portfolios = portfolios::find($request->id);
+      // 送信されてきたフォームデータを格納する
+      $portfolios_form = $request->all();
+      unset($portfolios_form['_token']);
+
+      // 該当するデータを上書きして保存する
+      $portfolios->fill($portfolios_form)->save();
+
+      return redirect('admin/portfolios');
   }
 }
