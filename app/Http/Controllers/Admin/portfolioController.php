@@ -73,11 +73,17 @@ class portfolioController extends Controller
       $portfolios = portfolios::find($request->id);
       // 送信されてきたフォームデータを格納する
       $portfolios_form = $request->all();
+      if (isset($portfolios_form['image'])) {
+        $path = $request->file('image')->store('public/image');
+        $portfolios->image_path = basename($path);
+        unset($portfolios_form['image']);
+      } elseif (isset($request->remove)) {
+        $portfolios->image_path = null;
+        unset($portfolios_form['remove']);
+      }
       unset($portfolios_form['_token']);
-
       // 該当するデータを上書きして保存する
       $portfolios->fill($portfolios_form)->save();
-
       return redirect('admin/portfolios');
   }
 }
