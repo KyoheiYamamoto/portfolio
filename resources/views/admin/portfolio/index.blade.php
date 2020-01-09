@@ -37,11 +37,16 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($posts as $news)
+                            @foreach($posts as $portfolios)
                                 <tr>
-                                    <th>{{ $news->id }}</th>
-                                    <td>{{ \Str::limit($news->title, 100) }}</td>
-                                    <td>{{ \Str::limit($news->body, 250) }}</td>
+                                    <th>{{ $portfolios->id }}</th>
+                                    <td>{{ \Str::limit($portfolios->title, 100) }}</td>
+                                    <td>{{ \Str::limit($portfolios->body, 250) }}</td>
+                                    <td>
+                                      <div>
+                                            <a href="{{ action('Admin\portfolioController@edit', ['id' => $portfolios->id]) }}">編集</a>
+                                        </div>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>
