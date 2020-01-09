@@ -11,7 +11,7 @@
                 <a href="{{ action('Admin\NewsController@add') }}" role="button" class="btn btn-primary">新規作成</a>
             </div>
             <div class="col-md-8">
-                <form action="{{ action('Admin\NewsController@index') }}" method="get">
+                <form action="{{ action('Admin\portfolioController@index') }}" method="get">
                     <div class="form-group row">
                         <label class="col-md-2">宿名</label>
                         <div class="col-md-8">
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="list-news col-md-12 mx-auto">
+            <div class="list-portfolios col-md-12 mx-auto">
                 <div class="row">
                     <table class="table table-dark">
                         <thead>
@@ -45,6 +45,9 @@
                                     <td>
                                       <div>
                                             <a href="{{ action('Admin\portfolioController@edit', ['id' => $portfolios->id]) }}">編集</a>
+                                        </div>
+                                         <div>
+                                            <a href="{{ action('Admin\portfolioController@delete', ['id' => $news->id]) }}">削除</a>
                                         </div>
                                     </td>
                                 </tr>

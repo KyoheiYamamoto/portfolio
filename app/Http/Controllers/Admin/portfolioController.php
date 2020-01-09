@@ -86,4 +86,14 @@ class portfolioController extends Controller
       $portfolios->fill($portfolios_form)->save();
       return redirect('admin/portfolios');
   }
+  
+   // 以下を追記　　
+  public function delete(Request $request)
+  {
+      // 該当するNews Modelを取得
+      $portfolios = portfolios::find($request->id);
+      // 削除する
+      $portfolios->delete();
+      return redirect('admin/portfolios/');
+  }  
 }
