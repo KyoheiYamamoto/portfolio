@@ -1,9 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
 class CreatePortfoliosTable extends Migration
 {
     /**
@@ -20,7 +18,6 @@ class CreatePortfoliosTable extends Migration
             $table->string('image_path')->nullable();  // 画像のパスを保存するカラム
         });
     }
-
     /**
      * Reverse the migrations.
      *

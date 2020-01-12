@@ -2,6 +2,10 @@
 namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\portfolio;
+use App\History;
+
+use Carbon\Carbon;
 
 class portfolioController extends Controller
 {
@@ -52,7 +56,6 @@ class portfolioController extends Controller
       return view('admin.portfolio.index', ['posts' => $posts, 'cond_title' => $cond_title]);
   }
   
-  // 以下を追記
 
   public function edit(Request $request)
   {
@@ -69,25 +72,31 @@ class portfolioController extends Controller
   {
       // Validationをかける
       $this->validate($request, portfolios::$rules);
-      // News Modelからデータを取得する
       $portfolios = portfolios::find($request->id);
-      // 送信されてきたフォームデータを格納する
       $portfolios_form = $request->all();
       if (isset($portfolios_form['image'])) {
         $path = $request->file('image')->store('public/image');
         $portfolios->image_path = basename($path);
-        unset($portfolios_form['image']);
+        
       } elseif (isset($request->remove)) {
         $portfolios->image_path = null;
-        unset($portfolios_form['remove']);
+        
       }
+      
       unset($portfolios_form['_token']);
-      // 該当するデータを上書きして保存する
+      unset($portfolios_form['remove']);
+      unset($portfolios_form['image']);
       $portfolios->fill($portfolios_form)->save();
+      
+      // 以下を追記
+        $history = new History;
+        $history->news_id = $news->id;
+        $history->edited_at = Carbon::now();
+        $history->save();
+        
       return redirect('admin/portfolios');
   }
   
-   // 以下を追記　　
   public function delete(Request $request)
   {
       // 該当するNews Modelを取得
