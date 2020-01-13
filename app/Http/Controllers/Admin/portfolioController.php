@@ -17,7 +17,7 @@ class portfolioController extends Controller
 // 以下を追記
   public function create(Request $request)
   {
-    $this->validate($request, portfolios::$rules);
+    $this->validate($request, portfolio::$rules);
 
       $portfolios = new portfolios;
       $form = $request->all();
@@ -90,7 +90,7 @@ class portfolioController extends Controller
       
       // 以下を追記
         $history = new History;
-        $history->news_id = $news->id;
+        $history->portfolios_id = $news->id;
         $history->edited_at = Carbon::now();
         $history->save();
         
