@@ -20,7 +20,7 @@ class portfolioController extends Controller
             $headline = null;
         }
 
-        // news/index.blade.php ファイルを渡している
+        // portfolio/index.blade.php ファイルを渡している
         // また View テンプレートに headline、 posts、という変数を渡している
         return view('portfolios.index', ['headline' => $headline, 'posts' => $posts]);
     }
