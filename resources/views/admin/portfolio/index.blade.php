@@ -8,7 +8,7 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <a href="{{ action('Admin\NewsController@add') }}" role="button" class="btn btn-primary">新規作成</a>
+                <a href="{{ action('Admin\portfolioController@add') }}" role="button" class="btn btn-primary">新規作成</a>
             </div>
             <div class="col-md-8">
                 <form action="{{ action('Admin\portfolioController@index') }}" method="get">
@@ -47,7 +47,7 @@
                                             <a href="{{ action('Admin\portfolioController@edit', ['id' => $portfolios->id]) }}">編集</a>
                                         </div>
                                          <div>
-                                            <a href="{{ action('Admin\portfolioController@delete', ['id' => $news->id]) }}">削除</a>
+                                            <a href="{{ action('Admin\portfolioController@delete', ['id' => $portfolios->id]) }}">削除</a>
                                         </div>
                                     </td>
                                 </tr>

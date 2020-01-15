@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h2>宿泊先一覧</h2>
-                <form action="{{ action('Admin\portfoliosController@update') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ action('Admin\portfolioController@update') }}" method="post" enctype="multipart/form-data">
                     @if (count($errors) > 0)
                         <ul>
                             @foreach($errors->all() as $e)
@@ -17,13 +17,13 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="title">宿名</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ $news_form->title }}">
+                            <input type="text" class="form-control" name="title" value="{{ $portfolios_form->title }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="body">Wifi、価格、場所</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="20">{{ $news_form->body }}</textarea>
+                            <textarea class="form-control" name="body" rows="20">{{ $portfolios_form->body }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -31,7 +31,7 @@
                         <div class="col-md-10">
                             <input type="file" class="form-control-file" name="image">
                             <div class="form-text text-info">
-                                設定中: {{ $news_form->image_path }}
+                                設定中: {{ $portfolios_form->image_path }}
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
@@ -52,8 +52,8 @@
                     <div class="col-md-4 mx-auto">
                         <h2>編集履歴</h2>
                         <ul class="list-group">
-                            @if ($news_form->histories != NULL)
-                                @foreach ($news_form->histories as $history)
+                            @if ($portfolios_form->histories != NULL)
+                                @foreach ($portfolios_form->histories as $history)
                                     <li class="list-group-item">{{ $history->edited_at }}</li>
                                 @endforeach
                             @endif

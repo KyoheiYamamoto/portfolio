@@ -15,7 +15,7 @@ class CreateHistoriesTable extends Migration
     {
         Schema::create('histories', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('portfolios_id');
+            $table->integer('portfolio_id');
             $table->string('edited_at');
 
             $table->timestamps();

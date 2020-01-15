@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\portfolio;
+use App\Portfolio;
 use App\History;
 
 use Carbon\Carbon;
@@ -19,7 +19,7 @@ class portfolioController extends Controller
   {
     $this->validate($request, portfolio::$rules);
 
-      $portfolios = new portfolios;
+      $portfolios = new Portfolio;
       $form = $request->all();
 
       // フォームから画像が送信されてきたら、保存して、$news->image_path に画像のパスを保存する
@@ -38,8 +38,8 @@ class portfolioController extends Controller
       // データベースに保存する
       $portfolios->fill($form);
       $portfolios->save();
-      // admin/news/createにリダイレクトする
-      return redirect('admin/portfolio/create');
+      // admin/portfolio/にリダイレクトする
+      return redirect('admin/portfolio');
   }  
   
   // 以下を追記
@@ -48,10 +48,10 @@ class portfolioController extends Controller
       $cond_title = $request->cond_title;
       if ($cond_title != '') {
           // 検索されたら検索結果を取得する
-          $posts = portfolios::where('title', $cond_title)->get();
+          $posts = Portfolio::where('title', $cond_title)->get();
       } else {
           // それ以外はすべてのニュースを取得する
-          $posts = portfolios::all();
+          $posts = Portfolio::all();
       }
       return view('admin.portfolio.index', ['posts' => $posts, 'cond_title' => $cond_title]);
   }
@@ -60,19 +60,19 @@ class portfolioController extends Controller
   public function edit(Request $request)
   {
       // News Modelからデータを取得する
-      $portfolios = portfolios::find($request->id);
+      $portfolios = Portfolio::find($request->id);
       if (empty($portfolios)) {
         abort(404);    
       }
-      return view('admin.portfolios.edit', ['portfolios_form' => $portfolios]);
+      return view('admin.portfolio.edit', ['portfolios_form' => $portfolios]);
   }
 
 
   public function update(Request $request)
   {
       // Validationをかける
-      $this->validate($request, portfolios::$rules);
-      $portfolios = portfolios::find($request->id);
+      $this->validate($request, Portfolio::$rules);
+      $portfolios = Portfolio::find($request->id);
       $portfolios_form = $request->all();
       if (isset($portfolios_form['image'])) {
         $path = $request->file('image')->store('public/image');
@@ -90,19 +90,19 @@ class portfolioController extends Controller
       
       // 以下を追記
         $history = new History;
-        $history->portfolios_id = $news->id;
+        $history->portfolio_id = $portfolios->id;
         $history->edited_at = Carbon::now();
         $history->save();
         
-      return redirect('admin/portfolios');
+      return redirect('admin/portfolio');
   }
   
   public function delete(Request $request)
   {
       // 該当するNews Modelを取得
-      $portfolios = portfolios::find($request->id);
+      $portfolios = Portfolio::find($request->id);
       // 削除する
       $portfolios->delete();
-      return redirect('admin/portfolios/');
+      return redirect('admin/portfolio/');
   }  
 }

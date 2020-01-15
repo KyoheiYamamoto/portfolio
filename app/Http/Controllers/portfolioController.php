@@ -12,7 +12,7 @@ class portfolioController extends Controller
 {
     public function index(Request $request)
     {
-        $posts = News::all()->sortByDesc('updated_at');
+        $posts = portfolio::all()->sortByDesc('updated_at');
 
         if (count($posts) > 0) {
             $headline = $posts->shift();
