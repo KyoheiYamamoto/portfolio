@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>宿泊先一覧</h2>
+                <h2>宿泊先登録</h2>
                 <form action="{{ action('Admin\portfolioController@create') }}" method="post" enctype="multipart/form-data">
 
                      @if (count($errors) > 0)
@@ -33,6 +33,9 @@
                             <input type="file" class="form-control-file" name="image">
                         </div>
                     </div>
+                    
+                    //住所や電話番号を追加する 1/19//
+                    
                     {{ csrf_field() }}
                     <input type="submit" class="btn btn-primary" value="更新">
                 </form>

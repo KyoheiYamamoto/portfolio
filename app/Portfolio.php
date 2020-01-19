@@ -11,6 +11,7 @@ class Portfolio extends Model
     public static $rules = array(
         'title' => 'required',
         'body' => 'required',
+         // 入力にチェックするものを入れておく　1/19 データベース参照にしながらやる
     );
     
     // 以下を追記

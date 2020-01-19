@@ -55,6 +55,9 @@
                             @if ($portfolios_form->histories != NULL)
                                 @foreach ($portfolios_form->histories as $history)
                                     <li class="list-group-item">{{ $history->edited_at }}</li>
+                                    
+                                    // 住所や電話番号を追加する 1/19 //
+                                    
                                 @endforeach
                             @endif
                         </ul>
