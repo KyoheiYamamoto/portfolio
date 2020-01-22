@@ -11,6 +11,11 @@ class Portfolio extends Model
     public static $rules = array(
         'title' => 'required',
         'body' => 'required',
+        'prefecture' => 'required',
+        'prefecture_code' => 'required',
+        'tel' => 'required',
+        'address' => 'required',
+        
          // 入力にチェックするものを入れておく　1/19 データベース参照にしながらやる
     );
     
