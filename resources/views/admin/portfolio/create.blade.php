@@ -32,7 +32,8 @@
                         <div class="col-md-10">
                             <input type="file" class="form-control-file" name="image">
                         </div>
-                    </div><div class="form-group row">
+                    </div>
+                    <div class="form-group row">
                                   <label class="col-md-2" for="title">住所</label>
                                   <div class="col-md-10">
                                     <textarea name="example" cols="100" rows="10"></textarea>

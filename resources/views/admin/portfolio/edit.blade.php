@@ -41,6 +41,20 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                                  <label class="col-md-2" for="title">住所</label>
+                                  <div class="col-md-10">
+                                    <textarea name="example" cols="100" rows="10"></textarea>
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                <label class="col-md-2" for="title">電話番号</label>
+                                <div class="col-md-10">
+                                  <textarea name="example" cols="100" rows="3"></textarea>
+                               </div>
+                            </div>
+                        
+                    
+                    <div class="form-group row">
                         <div class="col-md-10">
                             <input type="hidden" name="id" value="{{ $portfolios_form->id }}">
                             {{ csrf_field() }}
@@ -56,7 +70,7 @@
                                 @foreach ($portfolios_form->histories as $history)
                                     <li class="list-group-item">{{ $history->edited_at }}</li>
                                     
-                                    // 住所や電話番号を追加する 1/19 //
+                                    <!--住所や電話番号を追加する 1/19-->
                                     
                                 @endforeach
                             @endif
