@@ -22,7 +22,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="body">Wifi、価格、場所</label>
+                        <label class="col-md-2" for="body">レビュー</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
                         </div>
@@ -46,12 +46,12 @@
                                   <textarea name="example" cols="50" rows="3"></textarea>
                                </div>
                             </div>
-                          </div>
-                    
-                    <!--住所や電話番号を追加する 1/19-->
-                    
-                    {{ csrf_field() }}
+                        
                     <input type="submit" class="btn btn-primary" value="更新">
+                </div>
+                
+                <!--住所や電話番号を追加する 1/19-->
+                    {{ csrf_field() }}
                 </form>
             </div>
         </div>

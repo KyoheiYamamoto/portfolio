@@ -21,7 +21,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="body">Wifi、価格、場所</label>
+                        <label class="col-md-2" for="body">レビュー</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="body" rows="20">{{ $portfolios_form->body }}</textarea>
                         </div>
@@ -52,10 +52,9 @@
                                   <textarea name="example" cols="50" rows="10"></textarea>
                                </div>
                             </div>
-                        
-                    
+            
                     <div class="form-group row">
-                        <div class="col-md-10">
+                        <div class="col-md-2">
                             <input type="hidden" name="id" value="{{ $portfolios_form->id }}">
                             {{ csrf_field() }}
                             <input type="submit" class="btn btn-primary" value="更新">
