@@ -42,7 +42,7 @@ class portfolioController extends Controller
       return redirect('admin/portfolio');
   }  
   
-  // 以下を追記
+  
   public function index(Request $request)
   {
       $cond_title = $request->cond_title;
