@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="form-group row aaaa">
-                    <label class="col-md-2" for="body">Wifi、価格、場所</label>
+                    <label class="col-md-2" for="body">レビュー</label>
                     <div class="col-md-10">
                         {{ $portfolios->body }}
                     </div>
