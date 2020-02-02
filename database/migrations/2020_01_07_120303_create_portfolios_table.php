@@ -22,6 +22,7 @@ class CreatePortfoliosTable extends Migration
 		    $table->string('prefecture', 40)->nullable()->comment('都道府県名 フリーテキスト検索で使用');
 	     	$table->string('address')->nullable()->comment('住所2');
 	     	$table->string('tel', 20)->nullable()->comment('電話番号');
+	     	$table->string('presence');
         });
     }
     /**
