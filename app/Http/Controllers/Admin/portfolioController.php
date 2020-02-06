@@ -99,7 +99,7 @@ class portfolioController extends Controller
   
   public function delete(Request $request)
   {
-      // 該当するNews Modelを取得
+      // 該当する Portfolio Modelを取得
       $portfolios = Portfolio::find($request->id);
       // 削除する
       $portfolios->delete();

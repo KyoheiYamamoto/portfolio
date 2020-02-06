@@ -35,16 +35,11 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                            <label class="col-md-2">wifi</label>
-                            <div class="col-md-2 form-check radio-inline"> <!---->
-                                <input type="radio" class="form-check-input" name="presence" id="yes" value='有'{{ old('presence','yes') == '有' ? 'checked' : '' }} checked="checked">
-                            <label class="form-check-label" for="yes">有</label>
-                        </div>
-                        <div class="col-md-2 form-check radio-inline">
-                            <input type="radio" class="form-check-input" name="presence" id="no" value='無'{{ old('presence','no') == '無' ? 'checked' : '' }}>
-                            <label class="form-check-label" for="no">無</label>
-                        </div>
+                    <label class="col-md-2">wifi</label>
+                    <div class="col-md-10">
+                        {{ $portfolios->presence }}
                     </div>
+                </div>
                 <div class="form-group row ">
                     <label class="col-md-2" for="body">レビュー</label>
                     <div class="col-md-10">
