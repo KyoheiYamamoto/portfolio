@@ -50,13 +50,15 @@ body {
 .stars{
   display: flex;
   flex-direction: row-reverse;
-  justify-content: right;
+  justify-content: left;
+  margin-right: -15px;
 }
 .stars input[type='radio']{
   display: none;
+  position: left;
 }
 .stars label{
-  padding-right: 10px;
+  padding-left:20px;
   color: #ccc;
   font-size: 30px;
   cursor: pointer;
@@ -65,4 +67,12 @@ body {
 .stars label:hover ~ label,
 .stars input[type='radio']:checked ~ label{
   color: #fc0;
+}
+
+.col-md-3{
+  font-size: 18px;
+}
+
+.col-md-2{
+  font-size: 14px;
 }

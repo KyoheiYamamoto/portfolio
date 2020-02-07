@@ -23,11 +23,11 @@
                     </div>
                        <div class="form-group row">
                             <label class="col-md-3">wifi</label>
-                            <div class="col-md-3 form-check radio-inline"> <!---->
+                            <div class="col-md-4 form-check radio-inline"> <!---->
                                 <input type="radio" class="form-check-input" name="presence" id="yes" value='有'{{ old('presence','yes') == '有' ? 'checked' : '' }} checked="checked">
                             <label class="form-check-label" for="yes">有</label>
                         </div>
-                        <div class="col-md-3 form-check radio-inline">
+                        <div class="col-md-4 form-check radio-inline">
                             <input type="radio" class="form-check-input" name="presence" id="no" value='無'{{ old('presence','no') == '無' ? 'checked' : '' }}>
                             <label class="form-check-label" for="no">無</label>
                         </div>
@@ -44,8 +44,8 @@
                             <textarea class="form-control" name="amenities" rows="20">{{ old('amenities') }}</textarea>
                         </div>
                     </div>
+                    <label class="col-md-3" for="body">評価</label>
                     <form type="get" action="">
-                      <label class="col-md-3" for="body">評価</label>
                       <div class="stars">
                         <input id="star5" type="radio" name="star" value="5" />
                         <label for="star5">★</label>
@@ -57,9 +57,9 @@
                         <label for="star2">★</label>
                         <input id="star1" type="radio" name="star" value="1" />
                         <label for="star1">★</label>
-                        <input type="text" class="form-control" name="star" value="{{ old('star') }}">
                       </div>
                     </form>
+                    
                     <div class="form-group row">
                         <label class="col-md-3" for="title">画像</label>
                         <div class="col-md-10">
@@ -79,10 +79,9 @@
                                   <textarea name="tel" cols="50" rows="3"></textarea>
                                </div>
                             </div>
-                     
+                      {{ csrf_field() }}
                     <input type="submit" class="btn btn-primary" value="更新">
-                </div>
-                {{ csrf_field()
+
                 <!--住所や電話番号を追加する 1/19-->
                     
                 </form>

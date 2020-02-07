@@ -16,7 +16,7 @@
                     <div class="col-md-8">
                         <input type="text" class="form-control" name="cond_title" value="{{ $cond_title }}">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-8">
                         {{ csrf_field() }}
                         <input type="submit" class="btn btn-primary" value="検索">
                     </div>
@@ -34,12 +34,14 @@
                         {{ $portfolios->title }}
                     </div>
                 </div>
+                
                 <div class="form-group row">
                     <label class="col-md-2">wifi</label>
                     <div class="col-md-10">
                         {{ $portfolios->presence }}
                     </div>
                 </div>
+                
                 <div class="form-group row ">
                     <label class="col-md-2" for="body">レビュー</label>
                     <div class="col-md-10">
@@ -51,6 +53,7 @@
                         {{ $portfolios->amenities }}
                     </div>
                 </div>
+                
                 <div class="form-group row">
                     <label class="col-md-2">評価</label>
                     <div class="col-md-10">
