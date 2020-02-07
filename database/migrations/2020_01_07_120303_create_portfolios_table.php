@@ -23,7 +23,7 @@ class CreatePortfoliosTable extends Migration
 	     	$table->string('address')->nullable()->comment('住所2');
 	     	$table->string('tel', 20)->nullable()->comment('電話番号');
 	     	$table->string('presence')->comment('wifi');
-	     	$table->string('Amenities')->comment('設備・備品');
+	     	$table->string('amenities')->comment('設備・備品');
 	     	$table->string('star')->comment('評価');
         });
     }

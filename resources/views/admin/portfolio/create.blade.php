@@ -41,7 +41,7 @@
                     <div class="form-group row">
                         <label class="col-md-3" for="body">設備・備品</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="amenities" rows="20">{{ old('body') }}</textarea>
+                            <textarea class="form-control" name="amenities" rows="20">{{ old('amenities') }}</textarea>
                         </div>
                     </div>
                     <form type="get" action="">
@@ -57,6 +57,7 @@
                         <label for="star2">★</label>
                         <input id="star1" type="radio" name="star" value="1" />
                         <label for="star1">★</label>
+                        <input type="text" class="form-control" name="star" value="{{ old('star') }}">
                       </div>
                     </form>
                     <div class="form-group row">
@@ -78,12 +79,12 @@
                                   <textarea name="tel" cols="50" rows="3"></textarea>
                                </div>
                             </div>
-                        
+                     
                     <input type="submit" class="btn btn-primary" value="更新">
                 </div>
-                
+                {{ csrf_field()
                 <!--住所や電話番号を追加する 1/19-->
-                    {{ csrf_field() }}
+                    
                 </form>
             </div>
         </div>
