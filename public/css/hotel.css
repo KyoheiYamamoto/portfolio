@@ -47,3 +47,8 @@ body {
   border-bottom: solid 3px #364e96;/*下線*/
 }
 
+.col-md-2{
+  padding: .75em 0;
+  border-top: 1px solid #364e96;
+  border-bottom: 1px solid #364e96;
+}
