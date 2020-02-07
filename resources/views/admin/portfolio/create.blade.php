@@ -38,9 +38,15 @@
                             <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <label class="col-md-3" for="body">設備・備品</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" name="amenities" rows="20">{{ old('body') }}</textarea>
+                        </div>
+                    </div>
                     <form type="get" action="">
+                      <label class="col-md-3" for="body">評価</label>
                       <div class="stars">
-                         <label class="col-md-3" for="body">評価</label>
                         <input id="star5" type="radio" name="star" value="5" />
                         <label for="star5">★</label>
                         <input id="star4" type="radio" name="star" value="4" />

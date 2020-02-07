@@ -38,6 +38,12 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label class="col-md-2" for="body">設備・備品</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" name="amenities" rows="20">{{ $portfolios_form->amenities }}</textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <label class="col-md-2" for="image">画像</label>
                         <div class="col-md-10">
                             <input type="file" class="form-control-file" name="image">
@@ -79,9 +85,7 @@
                             @if ($portfolios_form->histories != NULL)
                                 @foreach ($portfolios_form->histories as $history)
                                     <li class="list-group-item">{{ $history->edited_at }}</li>
-                                    
-                                    <!--住所や電話番号を追加する 1/19-->
-                                    
+                                
                                 @endforeach
                             @endif
                         </ul>

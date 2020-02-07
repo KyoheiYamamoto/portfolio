@@ -45,7 +45,19 @@
                     <div class="col-md-10">
                         {{ $portfolios->body }}
                     </div>
+                    <div class="form-group row ">
+                    <label class="col-md-2" for="body">設備・備品</label>
+                    <div class="col-md-10">
+                        {{ $portfolios->amenities }}
+                    </div>
                 </div>
+                <div class="form-group row">
+                    <label class="col-md-2">評価</label>
+                    <div class="col-md-10">
+                        {{ $portfolios->star }}
+                    </div>
+                </div>
+                
                 <div class="form-group row">
                     <label class="col-md-2" for="body">住所</label>
                     <div class="col-md-10">
