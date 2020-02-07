@@ -43,6 +43,21 @@
                             <textarea class="form-control" name="amenities" rows="20">{{ $portfolios_form->amenities }}</textarea>
                         </div>
                     </div>
+                    <form type="get" action="">
+                      <label class="col-md-3" for="body">評価</label>
+                      <div class="stars">
+                        <input id="star5" type="radio" name="star" value="5" />
+                        <label for="star5">★</label>
+                        <input id="star4" type="radio" name="star" value="4" />
+                        <label for="star4">★</label>
+                        <input id="star3" type="radio" name="star" value="3" />
+                        <label for="star3">★</label>
+                        <input id="star2" type="radio" name="star" value="2" />
+                        <label for="star2">★</label>
+                        <input id="star1" type="radio" name="star" value="1" />
+                        <label for="star1">★</label>
+                      </div>
+                    </form>
                     <div class="form-group row">
                         <label class="col-md-2" for="image">画像</label>
                         <div class="col-md-10">
