@@ -1294,8 +1294,8 @@ pre code {
 
   .col-md-2 {
     -webkit-box-flex: 0;
-            flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
+    /*flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;*/
   }
 
   .col-md-3 {

@@ -46,6 +46,14 @@ body {
   padding: 0.5em;/*文字まわり（上下左右）の余白*/
   border-bottom: solid 3px #364e96;/*下線*/
 }
+.container h2 {
+  background: #c2edff;/*背景色*/
+    margin: 0 0 10px 0;
+    padding: 0;
+    
+  }
+
+/*--create.blede.phpのスタイル変更*/
 
 .stars{
   display: flex;
@@ -73,6 +81,12 @@ body {
   font-size: 18px;
 }
 
+ /*--index.blede.phpのスタイル変更*/
 .col-md-2{
-  font-size: 14px;
+  font-size: 20px;
 }
+
+.col-md-10{
+font-size: 18px;
+}
+

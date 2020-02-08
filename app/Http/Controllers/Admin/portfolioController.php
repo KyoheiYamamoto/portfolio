@@ -50,7 +50,7 @@ class portfolioController extends Controller
           // 検索されたら検索結果を取得する
           $posts = Portfolio::where('title', $cond_title)->get();
       } else {
-          // それ以外はすべてのニュースを取得する
+          // それ以外はすべてのホテル名を取得する
           $posts = Portfolio::all();
       }
       return view('admin.portfolio.index', ['posts' => $posts, 'cond_title' => $cond_title]);
