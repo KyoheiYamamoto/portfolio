@@ -15,7 +15,9 @@ class CreatePortfoliosTable extends Migration
             $table->bigIncrements('id');
             $table->string('title'); // ニュースのタイトルを保存するカラム
             $table->string('body');  // ニュースの本文を保存するカラム
-            $table->string('image_path')->nullable();  // 画像のパスを保存するカラム
+            $table->string('image_path1')->nullable();
+            $table->string('image_path2')->nullable();
+            $table->string('image_path3')->nullable();// 画像のパスを保存するカラム
             $table->timestamps();
             $table->string('zip', 10)->nullable()->comment('郵便番号');
 		    $table->tinyInteger('prefecture_code')->unsigned()->nullable()->comment('都道府県コード : JIS都道府県コード');

@@ -34,33 +34,48 @@
                         {{ $portfolios->title }}
                     </div>
                 </div>
-                
                 <div class="form-group row">
                     <label class="col-md-2">wifi</label>
                     <div class="col-md-10">
                         {{ $portfolios->presence }}
                     </div>
                 </div>
-                
                 <div class="form-group row ">
                     <label class="col-md-2" for="body">レビュー</label>
                     <div class="col-md-10">
                         {{ $portfolios->body }}
                     </div>
-                    <div class="form-group row ">
+                </div>
+                <div class="form-group row ">
                     <label class="col-md-2" for="body">設備・備品</label>
                     <div class="col-md-10">
                         {{ $portfolios->amenities }}
                     </div>
                 </div>
-                
+                @if ($portfolios->image_path1)
+                <div class="form-group img-content">
+                     <img src="{{ asset('storage/image/' . $portfolios->image_path1) }}"
+                        alt="image" class="img-size" />
+                </div>
+                @endif
+                @if ($portfolios->image_path2)
+                <div class="form-group img-content">
+                     <img src="{{ asset('storage/image/' . $portfolios->image_path2) }}"
+                        alt="image" class="img-size" />
+                </div>
+                @endif
+                @if ($portfolios->image_path3)
+                <div class="form-group img-content">
+                     <img src="{{ asset('storage/image/' . $portfolios->image_path3) }}"
+                        alt="image" class="img-size" />
+                </div>
+                @endif
                 <div class="form-group row">
                     <label class="col-md-2">評価</label>
                     <div class="col-md-10">
                         {{ $portfolios->star }}
                     </div>
                 </div>
-                
                 <div class="form-group row">
                     <label class="col-md-2" for="body">住所</label>
                     <div class="col-md-10">
@@ -79,3 +94,4 @@
     </div>
 </div>
 @endsection
+</div>

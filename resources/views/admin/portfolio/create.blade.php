@@ -61,7 +61,9 @@
                 <div class="form-group row">
                     <label class="col-md-3" for="title">画像</label>
                     <div class="col-md-10">
-                        <input type="file" class="form-control-file" name="image">
+                        <input type="file" class="form-control-file" name="image1">
+                        <input type="file" class="form-control-file" name="image2">
+                        <input type="file" class="form-control-file" name="image3">
                     </div>
                 </div>
                 <div class="form-group row">

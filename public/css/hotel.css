@@ -4,41 +4,32 @@ body {
   background-color: #efefef;
   color: #333;
 }
-
 .navbar-laravel {
   background-color: #000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
-
 .navbar-brand {
   color: #fff !important;
 }
-
 .nav-link {
   color: #fff !important;
 }
-
 .table-dark {
   color: #fff;
 }
-
 .list-group-item {
   border-color: #fff;
   background-color: #000;
 }
-
 .login-box {
   background-color: rgba(0, 0, 0, 0);
 }
-
 .login-header {
   background-color: rgba(0, 0, 0, 0.25);
 }
-
 .login-body {
   background-color: rgba(0, 0, 0, 0.25);
 }
-
 .container h1{
   width: 920px;
   margin: 0 auto 50px auto;
@@ -50,11 +41,8 @@ body {
   background: #c2edff;/*背景色*/
     margin: 0 0 10px 0;
     padding: 0;
-    
   }
-
 /*--create.blede.phpのスタイル変更*/
-
 .stars{
   display: flex;
   flex-direction: row-reverse;
@@ -76,17 +64,26 @@ body {
 .stars input[type='radio']:checked ~ label{
   color: #fc0;
 }
-
 .col-md-3{
   font-size: 18px;
 }
-
  /*--index.blede.phpのスタイル変更*/
 .col-md-2{
   font-size: 20px;
 }
-
 .col-md-10{
 font-size: 18px;
 }
-
+/* 画像サイズ変更 */
+.img-content{ 
+  text-align:center;
+}
+.img-size {
+  width: 90%;
+}
+.content-box {
+  border-radius: 25px;
+  border: 2px solid rgba(187, 205, 252, 0.7);
+  padding: 10px;
+  margin-bottom:10px;
+}
