@@ -117,10 +117,10 @@
                       <a href="#carousel__slide3"
                          class="carousel__navigation-button">Go to slide 3</a>
                     </li>
-                    
                   </ol>
                 </aside>
               </section>
+              
                 <div class="form-group row">
                     <label class="col-md-2">評価</label>
                     <div class="col-md-10">
