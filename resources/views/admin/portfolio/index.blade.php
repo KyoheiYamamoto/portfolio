@@ -102,7 +102,7 @@
                        class="carousel__next">Go to first slide</a>
                   </li>
                 </ol>
-                <!-- 下の丸い部分 -->
+                <!-- 下の丸い部分のところ-->
                 <aside class="carousel__navigation">
                   <ol class="carousel__navigation-list">
                     <li class="carousel__navigation-item">
@@ -120,7 +120,6 @@
                   </ol>
                 </aside>
               </section>
-              
                 <div class="form-group row">
                     <label class="col-md-2">評価</label>
                     <div class="col-md-10">
