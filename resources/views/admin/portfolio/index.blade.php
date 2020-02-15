@@ -25,6 +25,7 @@
         </div>
     </div>
     <div class="row">
+        
         <div class="col-md-8 mx-auto">
             @foreach($posts as $portfolios)
             <div class='content-box'>
@@ -78,8 +79,7 @@
                       class="carousel__slide">
                     <div class="carousel__snapper">
                       <a href="#carousel__slide3"
-                         class="carousel__prev">Go to last slide</a>
-                      <a href="#carousel__slide2"
+                         class="carousel__prev">Go to last slide</a> <a href="#carousel__slide2"
                          class="carousel__next">Go to next slide</a>
                     </div>
                   </li>
