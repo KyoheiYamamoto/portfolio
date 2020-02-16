@@ -25,7 +25,6 @@
         </div>
     </div>
     <div class="row">
-        
         <div class="col-md-8 mx-auto">
             @foreach($posts as $portfolios)
             <div class='content-box'>
@@ -53,73 +52,7 @@
                         {{ $portfolios->amenities }}
                     </div>
                 </div>
-                @if ($portfolios->image_path1)
-                <div class="form-group img-content">
-                     <img src="{{ asset('storage/image/' . $portfolios->image_path1) }}"
-                        alt="image" class="img-size" />
-                </div>
-                @endif
-                @if ($portfolios->image_path2)
-                <div class="form-group img-content">
-                     <img src="{{ asset('storage/image/' . $portfolios->image_path2) }}"
-                        alt="image" class="img-size" />
-                </div>
-                @endif
-                @if ($portfolios->image_path3)
-                <div class="form-group img-content">
-                     <img src="{{ asset('storage/image/' . $portfolios->image_path3) }}"
-                        alt="image" class="img-size" />
-                </div>
-                @endif
                 <!-- カルーセル表記 -->
-               <section class="carousel" aria-label="Gallery">
-                <ol class="carousel__viewport">
-                  <li id="carousel__slide1"
-                      tabindex="0"
-                      class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <a href="#carousel__slide3"
-                         class="carousel__prev">Go to last slide</a> <a href="#carousel__slide2"
-                         class="carousel__next">Go to next slide</a>
-                    </div>
-                  </li>
-                  <li id="carousel__slide2"
-                      tabindex="0"
-                      class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide1"
-                       class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide3"
-                       class="carousel__next">Go to next slide</a>
-                  </li>
-                  <li id="carousel__slide3"
-                      tabindex="0"
-                      class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide2"
-                       class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide1"
-                       class="carousel__next">Go to first slide</a>
-                  </li>
-                </ol>
-                <!-- 下の丸い部分のところ-->
-                <aside class="carousel__navigation">
-                  <ol class="carousel__navigation-list">
-                    <li class="carousel__navigation-item">
-                      <a href="#carousel__slide1"
-                         class="carousel__navigation-button">Go to slide 1</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                      <a href="#carousel__slide2"
-                         class="carousel__navigation-button">Go to slide 2</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                      <a href="#carousel__slide3"
-                         class="carousel__navigation-button">Go to slide 3</a>
-                    </li>
-                  </ol>
-                </aside>
-              </section>
                 <div class="form-group row">
                     <label class="col-md-2">評価</label>
                     <div class="col-md-10">
@@ -140,6 +73,23 @@
                 </div>
             </div>
             @endforeach
+        </div>
+        <div class="slider">
+            @if ($portfolios->image_path1)
+            <div class="img-content">
+                <img src="{{ asset('storage/image/' . $portfolios->image_path1) }}" alt="image" class="img-size" />
+            </div>
+            @endif
+            @if ($portfolios->image_path2)
+            <div class="img-content">
+                <img src="{{ asset('storage/image/' . $portfolios->image_path2) }}" alt="image" class="img-size" />
+            </div>
+            @endif
+            @if ($portfolios->image_path3)
+            <div class="img-content">
+                <img src="{{ asset('storage/image/' . $portfolios->image_path3) }}" alt="image" class="img-size" />
+            </div>
+            @endif
         </div>
     </div>
 </div>
