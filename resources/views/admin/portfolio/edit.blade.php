@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="body">設備・a備品</label>
+                        <label class="col-md-2" for="body">設備・備品</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="amenities" rows="20">{{ $portfolios_form->amenities }}</textarea>
                         </div>
