@@ -6,6 +6,8 @@
         <h2>宿泊先一覧</h2>
     </div>
     <div class="row">
+        <canvas class="background"></canvas>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
         <div class="col-md-4">
             <a href="{{ action('Admin\portfolioController@add') }}" role="button" class="btn btn-primary">新規作成</a>
         </div>
@@ -89,6 +91,7 @@
             <div class="img-content">
                 <img src="{{ asset('storage/image/' . $portfolios->image_path3) }}" alt="image" class="img-size" />
             </div>
+            
             @endif
         </div>
     </div>
