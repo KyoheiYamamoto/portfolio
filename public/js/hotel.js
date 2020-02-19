@@ -5,7 +5,7 @@ $(document).ready(function () {
           autoplay: true,
           
           // 自動再生で切り替えをする時間
-          autoplaySpeed: 1000,
+          autoplaySpeed: 1500,
           // 自動再生や左右の矢印でスライドするスピード
           speed: 1000,
           // 自動再生時にスライドのエリアにマウスオンで一時停止するかどうか
