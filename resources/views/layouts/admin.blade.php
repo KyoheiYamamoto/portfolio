@@ -15,18 +15,18 @@
     
     <!-- Styles -->
     {{-- Laravel標準で用意されているCSSを読み込みます --}}
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     {{-- この章の後半で作成するCSSを読み込みます --}}
-    <link href="{{ secure_asset('css/slick.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('css/slick-theme.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('css/hotel.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slick.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/hotel.css') }}" rel="stylesheet">
     
     <!-- Scripts -->
     {{-- Laravel標準で用意されているJavascriptを読み込みます --}}
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src={{ secure_asset('js/slick.min.js') }}></script>
-    <script src="{{ secure_asset('js/hotel.js') }}"></script>
+    <script src={{ asset('js/slick.min.js') }}></script>
+    <script src="{{ asset('js/hotel.js') }}"></script>
 </head>
 <body>
     <div id="app">
