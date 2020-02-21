@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,13 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'admin'], function() {
+Route::group(['prefix' => 'admin'], function (): void {
     Route::get('portfolio/create', 'Admin\portfolioController@add')->middleware('auth');
     Route::post('portfolio/create', 'Admin\portfolioController@create');
-    Route::get('portfolio', 'Admin\portfolioController@index')->middleware('auth'); 
+    Route::get('portfolio', 'Admin\portfolioController@index')->middleware('auth');
 });
-    Route::get('portfolio/edit', 'Admin\portfolioController@edit')->middleware('auth'); 
-    Route::post('portfolio/edit', 'Admin\portfolioController@update')->middleware('auth'); 
+    Route::get('portfolio/edit', 'Admin\portfolioController@edit')->middleware('auth');
+    Route::post('portfolio/edit', 'Admin\portfolioController@update')->middleware('auth');
     Route::get('portfolio/delete', 'Admin\portfolioController@delete')->middleware('auth');
 
 Auth::routes();

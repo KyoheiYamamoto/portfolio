@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'Login' => 'ログイン',
     'E-Mail Address' => 'メールアドレス',

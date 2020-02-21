@@ -15,7 +15,7 @@ $(document).ready(function () {
       $(function() {
       $('.autoplay').slick({
         autoplay: true,
-      }); 
+      });
         var particles = Particles.init({
       selector: '.background',
     sizeVariations: 10,
