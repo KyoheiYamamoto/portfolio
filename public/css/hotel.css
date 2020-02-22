@@ -95,5 +95,5 @@ font-size: 18px;
 img {
   width: 250px;
   height: 250px;
-  object-fit: cover; /* 画像の縦横比を維持したままボックスを埋めたい時 */
+  object-fit: cover; /* 画像の縦横比を維持したままボックスを埋める時 */
 }
