@@ -75,7 +75,7 @@ body {
 font-size: 18px;
 }
 /* 画像サイズ変更 */
-.img-content{ 
+.img-content{
   text-align:center;
 }
 /* .img-size {
@@ -94,6 +94,6 @@ font-size: 18px;
 
 img {
   width: 250px;
-  height: 250px;
+  height: 500px;
   object-fit: cover; /* 画像の縦横比を維持したままボックスを埋める時 */
 }
