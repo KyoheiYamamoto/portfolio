@@ -23,5 +23,31 @@ $(document).ready(function () {
     connectParticles: true
  });
     });
+    $(function(){
+
+      $('.sample').each(function(){
+
+        var imgWidth = $(this).find('img').width();
+        var imgHeight = $(this).find('img').height();
+
+        aspectRatio = imgWidth / imgHeight
+
+        if(aspectRatio >= 1){
+          //横長画像の場合 divのheightに数値を合わせる
+          $(this).find('img').css('height','200px');
+        }else{
+          //縦長画像の場合 divのwidthに数値を合わせる
+          $(this).find('img').css('width','300px');
+
+          //上下中央揃えにする場合はこれも
+          var iHeight = $(this).find('img').height();
+          var i = (iHeight-200)/2
+          $(this).find('img').css('margin-top', '-'+i+'px');
+
+        }
+
+      });
+
+    });
 
 });

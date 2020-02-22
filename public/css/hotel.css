@@ -93,7 +93,11 @@ font-size: 18px;
 .slider img{ width: 100%; }
 
 img {
-  width: 250px;
-  height: 500px;
-  object-fit: cover; /* 画像の縦横比を維持したままボックスを埋める時 */
+  display:block;
+	width:500px;
+	height:600px;
+	text-align:center;
+	position:relative;
+	overflow:hidden;
+	border:#CCC solid 2px;
 }
