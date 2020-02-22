@@ -92,3 +92,8 @@ font-size: 18px;
 .slider { width: 600px; height: 400px; margin: 0 auto 50px;}
 .slider img{ width: 100%; }
 
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* 画像の縦横比を維持したままボックスを埋めたい時 */
+}
