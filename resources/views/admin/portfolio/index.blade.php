@@ -5,15 +5,47 @@
                 <div class="row">
                     <h2>宿泊先一覧</h2>
                     <ul class="header-navigation">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#">TOP</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="row">
+                <div class="card-contents">
+                        <h3 class="text-title">NEWS</h2>
+                            <ul class="information-list">
+                            <li>2017/05/01 2号店がドイツにてオープンしました。</li>
+                            <li>2017/04/01 春メニュー提供開始しました。</li>
+                            <li>2017/01/01 Batty's Coffee Standオープンしました。</li>
+                            </ul>
+                </div>
+                <h4 class="m-concept-title m-concept--index">
+                新しい宿さがし
+                <span style="letter-spacing:-20px;">。</span>
+                </h4>
+
+                    <div class="m-concept-read m-concept-read--index">
+                        <p>僕たちが作りたいのは
+                            <br>持っているだけで旅に出たくなるモノ。
+                            <br>持っているだけでわくわくするモノ。
+                        </p>
+                        <p>それは新しい時代の “パスポート”
+                            <br>僕たちが作るものは、
+                            <br>そんな、存在でありたい。
+                        </p>
+                        <p>そして、人と人が繋がる
+                            <br>こんな時代だからこそ、
+                            <br>僕たちは、みんなでひとつのモノを
+                            <br>作ることを追求したい。
+                        </p>
+                        <p class="m-concept-siteLogo">PAS-POL</p>
+                        <p>それは、自分と世界を繋げる
+                            <br>旅のモノづくりブランド
+                        </p>
+                    </div>
                     <canvas class="background"></canvas>
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+                <div class="row">
                     <div class="col-md-4">
                         <a href="{{ action('Admin\portfolioController@add') }}" role="button" class="btn btn-primary">新規作成</a>
                     </div>
@@ -101,5 +133,29 @@
                     </div>
                 </div>
             </div>
+            <div class="l-footerNav">
+            <div class="l-container l-container--full">
+                <nav class="m-navigation m-navigation--center">
+                <ul>
+                    <li>TOP</a></li>
+                    <li>PRODUCT</a></li>
+                    <li>ABOUT</a></li>
+                    <li>NEWS</a></li>
+                    <li>CONTACT</a></li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+        <footer class="l-footer">
+            <div class="l-container l-container--narrow">
+                <h1 class="m-siteLogo m-siteLogo--small">
+                <a href="https://pas-pol.jp">PAS-POL -旅のモノづくりブランド-｜TABIPPO</a>
+                </h1>
+
+                <div class="m-copyRight">
+                <small>Copyright © 2020 PAS-POL -旅のモノづくりブランド-｜TABIPPO All rights reserved.</small>
+                </div>
+            </div>
+        </footer>
         @endsection
-</div>
+    </div>
