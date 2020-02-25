@@ -234,6 +234,7 @@ img {
   letter-spacing: normal;
   word-spacing: normal;
   margin-left: 40px;
+  color:white;
 }
 
  /* フッター */
@@ -272,7 +273,7 @@ img {
 .m-copyRight {
   margin: 0;
   font-size: 12px;
-  color:blue;
+  color:#fff;
   font-family: "Gill Sans Std Book", sans-serif;
   letter-spacing: 0.1em;
 }
