@@ -4,6 +4,12 @@
     <div class="container">
                 <div class="row">
                     <h2>宿泊先一覧</h2>
+                    <ul class="header-navigation">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
                 <div class="row">
                     <canvas class="background"></canvas>

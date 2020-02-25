@@ -12,6 +12,7 @@ $(document).ready(function () {
           // 自動再生時にドットにマウスオンで一時停止するかどうか
           pauseOnDotsHover: true,
       });
+      //サイト修正
       $(function() {
       $('.autoplay').slick({
         autoplay: true,
@@ -24,8 +25,8 @@ $(document).ready(function () {
  });
     });
     $(function(){
-
-      $('.sample').each(function(){
+      //画像調整
+      $('.img-content').each(function(){
 
         var imgWidth = $(this).find('img').width();
         var imgHeight = $(this).find('img').height();
