@@ -12,11 +12,11 @@
                     </ul>
                 </div>
                 <div class="card-contents">
-                        <h3 class="text-title">NEWS</h2>
+                        <h3 class="text-title">NEWS</h3>
                             <ul class="information-list">
-                            <li>2017/05/01 2号店がドイツにてオープンしました。</li>
-                            <li>2017/04/01 春メニュー提供開始しました。</li>
-                            <li>2017/01/01 Batty's Coffee Standオープンしました。</li>
+                                <li>2017/05/01 2号店がドイツにてオープンしました。</li>
+                                <li>2017/04/01 春メニュー提供開始しました。</li>
+                                <li>2017/01/01 Batty's Coffee Standオープンしました。</li>
                             </ul>
                 </div>
                 <h4 class="m-concept-title m-concept--index">
@@ -134,26 +134,26 @@
                 </div>
             </div>
             <div class="l-footerNav">
-            <div class="l-container l-container--full">
-                <nav class="m-navigation m-navigation--center">
-                <ul>
-                    <li>TOP</a></li>
-                    <li>PRODUCT</a></li>
-                    <li>ABOUT</a></li>
-                    <li>NEWS</a></li>
-                    <li>CONTACT</a></li>
-                </ul>
-                </nav>
+                <div class="l-container l-container--full">
+                    <nav class="m-navigation m-navigation--center">
+                        <ul>
+                            <li>TOP</a></li>
+                            <li>PRODUCT</a></li>
+                            <li>ABOUT</a></li>
+                            <li>NEWS</a></li>
+                            <li>CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
         <footer class="l-footer">
             <div class="l-container l-container--narrow">
                 <h1 class="m-siteLogo m-siteLogo--small">
-                <a href="https://pas-pol.jp">PAS-POL -旅のモノづくりブランド-｜TABIPPO</a>
+                    <a href="https://pas-pol.jp">PAS-POL -旅のモノづくりブランド-｜TABIPPO</a>
                 </h1>
 
                 <div class="m-copyRight">
-                <small>Copyright © 2020 PAS-POL -旅のモノづくりブランド-｜TABIPPO All rights reserved.</small>
+                    <small>Copyright © 2020 PAS-POL -旅のモノづくりブランド-｜TABIPPO All rights reserved.</small>
                 </div>
             </div>
         </footer>
