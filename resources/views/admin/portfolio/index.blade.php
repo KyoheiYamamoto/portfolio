@@ -11,14 +11,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="card-contents">
-                        <h3 class="text-title">NEWS</h3>
-                            <ul class="information-list">
-                                <li>2017/05/01 2号店がドイツにてオープンしました。</li>
-                                <li>2017/04/01 春メニュー提供開始しました。</li>
-                                <li>2017/01/01 Batty's Coffee Standオープンしました。</li>
-                            </ul>
-                </div>
+                
                 <h4 class="m-concept-title m-concept--index">
                 新しい宿さがし
                 <span style="letter-spacing:-20px;">。</span>
@@ -53,9 +46,9 @@
                         <form action="{{ action('Admin\portfolioController@index') }}" method="get">
                             <div class="form-group row">
                                 <label class="col-md-2">宿名</label>
-                                <div class="col-md-8">
-                                    <input type="text" class="form-control" name="cond_title" value="{{ $cond_title }}">
-                                </div>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" name="cond_title" value="{{ $cond_title }}">
+                                    </div>
                                 <div class="col-md-8">
                                     {{ csrf_field() }}
                                     <input type="submit" class="btn btn-primary" value="検索">
@@ -133,6 +126,14 @@
                     </div>
                 </div>
             </div>
+            <div class="card-contents">
+                        <h3 class="text-title">NEWS</h3>
+                            <ul class="information-list">
+                                <li>2017/05/01 2号店がドイツにてオープンしました。</li>
+                                <li>2017/04/01 春メニュー提供開始しました。</li>
+                                <li>2017/01/01 Batty's Coffee Standオープンしました。</li>
+                            </ul>
+                </div>
             <div class="l-footerNav">
                 <div class="l-container l-container--full">
                     <nav class="m-navigation m-navigation--center">
