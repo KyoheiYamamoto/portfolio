@@ -11,7 +11,6 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                
                 <h4 class="m-concept-title m-concept--index">
                 新しい宿さがし
                 <span style="letter-spacing:-20px;">。</span>
