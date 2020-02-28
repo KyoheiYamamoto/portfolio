@@ -62,8 +62,26 @@
                         <label class="col-md-3" for="title">画像</label>
                         <div class="col-md-10">
                             <input type="file" class="form-control-file" name="image1">
+                            <!-- CSS -->
+                            <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
+                            <!-- JS -->
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
+
                             <input type="file" class="form-control-file" name="image2">
+                            <!-- CSS -->
+                            <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
+                            <!-- JS -->
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
+
                             <input type="file" class="form-control-file" name="image3">
+                            <!-- CSS -->
+                            <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
+                            <!-- JS -->
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
+
                         </div>
                     </div>
                     <div class="form-group row">
