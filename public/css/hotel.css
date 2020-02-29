@@ -292,3 +292,29 @@ div {
   width: 400px;
   height: 200px;
 }
+
+/*マルチカラム ― タイルレイアウト  */
+.item {
+  border-radius: 20px;
+  background: #edf;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  text-align: left;
+}
+
+@media ( min-width : 600px ){
+    .flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    }
+  .item {
+    width: 30%;
+  }
+}

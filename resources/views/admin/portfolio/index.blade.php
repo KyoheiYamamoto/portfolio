@@ -54,8 +54,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8 mx-auto">
+                <div class="flexbox">
+                    <div class="item">
                         @foreach($posts as $portfolios)
+                        @if ($portfolios->image_path1)
+                        <div class="img-content">
+                            <img src="{{ asset('storage/image/' . $portfolios->image_path1) }}" alt="image" class="img-size" />
+                        </div>
                         <div class='content-box'>
                             <div class="form-group row">
                                 <label class="col-md-2" for="title">宿名</label>
@@ -63,59 +68,6 @@
                                     {{ $portfolios->title }}
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label class="col-md-2">wifi</label>
-                                <div class="col-md-10">
-                                    {{ $portfolios->presence }}
-                                </div>
-                            </div>
-                            <div class="form-group row ">
-                                <label class="col-md-2" for="body">レビュー</label>
-                                <div class="col-md-10">
-                                    {{ $portfolios->body }}
-                                </div>
-                            </div>
-                            <div class="form-group row ">
-                                <label class="col-md-2" for="body">設備・備品</label>
-                                <div class="col-md-10">
-                                    {{ $portfolios->amenities }}
-                                </div>
-                            </div>
-                            <!-- カルーセル表記 -->
-                            <div class="form-group row">
-                                <label class="col-md-2">評価</label>
-                                <div class="col-md-10">
-                                    {{ $portfolios->star }}
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-2" for="body">住所</label>
-                                <div class="col-md-10">
-                                    {{ $portfolios->address }}
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-2" for="body">URL・電話番号</label>
-                                <div class="col-md-10">
-                                    {{ $portfolios->tel }}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider">
-                        @if ($portfolios->image_path1)
-                        <div class="img-content">
-                            <img src="{{ asset('storage/image/' . $portfolios->image_path1) }}" alt="image" class="img-size" />
-                        </div>
-                        @endif
-                        @if ($portfolios->image_path2)
-                        <div class="img-content">
-                            <img src="{{ asset('storage/image/' . $portfolios->image_path2) }}" alt="image" class="img-size" />
-                        </div>
-                        @endif
-                        @if ($portfolios->image_path3)
-                        <div class="img-content">
-                            <img src="{{ asset('storage/image/' . $portfolios->image_path3) }}" alt="image" class="img-size" />
                         </div>
                         @endif
                     </div>
@@ -156,3 +108,4 @@
         </footer>
         @endsection
     </div>
+© 2020 GitHub, Inc.
