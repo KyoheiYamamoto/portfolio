@@ -21,6 +21,7 @@ Route::group(['prefix' => 'admin'], function (): void {
     Route::get('portfolio/create', 'Admin\portfolioController@add')->middleware('auth');
     Route::post('portfolio/create', 'Admin\portfolioController@create');
     Route::get('portfolio', 'Admin\portfolioController@index')->middleware('auth');
+    Route::get('portfolio/detail', 'Admin\portfolioController@detail')->middleware('auth');
 });
     Route::get('portfolio/edit', 'Admin\portfolioController@edit')->middleware('auth');
     Route::post('portfolio/edit', 'Admin\portfolioController@update')->middleware('auth');

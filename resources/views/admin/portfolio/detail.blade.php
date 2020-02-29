@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title', '宿泊先一覧')
+@section('title', '宿泊先詳細')
 @section('content')
     <div class="container">
                 <div class="row">
@@ -11,125 +11,73 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <h4 class="m-concept-title m-concept--index">
-                新しい宿さがし
-                <span style="letter-spacing:-20px;">。</span>
-                </h4>
-
-                    <div class="m-concept-read m-concept-read--index">
-                        <p>世界中の宿へ
-                            <br>安く手軽に探せる。
-                            <br>探しているだけでわくわくする。
-                        </p>
-                        <p>それは新しい時代の “宿泊へ”
-                        <p>そして、人と人が繋がる
-                            <br>こんな時代だからこそ、
-                            <br>僕たちは、みんなでひとつのせかいを
-                            <br>泊まることで描いていきたい。
-                        </p>
-                        <p class="m-concept-siteLogo">〇〇</p>
-                        <p>それは、自分と世界を広がる
-                            <br>宿との出会いができるサービス
-                        </p>
-                    </div>
-                    <canvas class="background"></canvas>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href="{{ action('Admin\portfolioController@add') }}" role="button" class="btn btn-primary">新規作成</a>
-                    </div>
-                    <div class="col-md-8">
-                        <form action="{{ action('Admin\portfolioController@index') }}" method="get">
-                            <div class="form-group row">
-                                <label class="col-md-2">宿名</label>
-                                    <div class="col-md-8">
-                                        <input type="text" class="form-control" name="cond_title" value="{{ $cond_title }}">
-                                    </div>
-                                <div class="col-md-8">
-                                    {{ csrf_field() }}
-                                    <input type="submit" class="btn btn-primary" value="検索">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-md-8 mx-auto">
-                        @foreach($posts as $portfolios)
                         <div class='content-box'>
                             <div class="form-group row">
                                 <label class="col-md-2" for="title">宿名</label>
                                 <div class="col-md-10">
-                                    {{ $portfolios->title }}
+                                    {{ $portfolio->title }}
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-md-2">wifi</label>
                                 <div class="col-md-10">
-                                    {{ $portfolios->presence }}
+                                    {{ $portfolio->presence }}
                                 </div>
                             </div>
                             <div class="form-group row ">
                                 <label class="col-md-2" for="body">レビュー</label>
                                 <div class="col-md-10">
-                                    {{ $portfolios->body }}
+                                    {{ $portfolio->body }}
                                 </div>
                             </div>
                             <div class="form-group row ">
                                 <label class="col-md-2" for="body">設備・備品</label>
                                 <div class="col-md-10">
-                                    {{ $portfolios->amenities }}
+                                    {{ $portfolio->amenities }}
                                 </div>
                             </div>
                             <!-- カルーセル表記 -->
                             <div class="form-group row">
                                 <label class="col-md-2">評価</label>
                                 <div class="col-md-10">
-                                    {{ $portfolios->star }}
+                                    {{ $portfolio->star }}
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-md-2" for="body">住所</label>
                                 <div class="col-md-10">
-                                    {{ $portfolios->address }}
+                                    {{ $portfolio->address }}
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-md-2" for="body">URL・電話番号</label>
                                 <div class="col-md-10">
-                                    {{ $portfolios->tel }}
+                                    {{ $portfolio->tel }}
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="slider">
-                        @if ($portfolios->image_path1)
+                        @if ($portfolio->image_path1)
                         <div class="img-content">
-                            <img src="{{ asset('storage/image/' . $portfolios->image_path1) }}" alt="image" class="img-size" />
+                            <img src="{{ asset('storage/image/' . $portfolio->image_path1) }}" alt="image" class="img-size" />
                         </div>
                         @endif
-                        @if ($portfolios->image_path2)
+                        @if ($portfolio->image_path2)
                         <div class="img-content">
-                            <img src="{{ asset('storage/image/' . $portfolios->image_path2) }}" alt="image" class="img-size" />
+                            <img src="{{ asset('storage/image/' . $portfolio->image_path2) }}" alt="image" class="img-size" />
                         </div>
                         @endif
-                        @if ($portfolios->image_path3)
+                        @if ($portfolio->image_path3)
                         <div class="img-content">
-                            <img src="{{ asset('storage/image/' . $portfolios->image_path3) }}" alt="image" class="img-size" />
+                            <img src="{{ asset('storage/image/' . $portfolio->image_path3) }}" alt="image" class="img-size" />
                         </div>
                         @endif
                     </div>
-                    @endforeach
                 </div>
             </div>
-            <div class="card-contents">
-                        <h3 class="text-title">NEWS</h3>
-                            <ul class="information-list">
-                                <li>2017/05/01 2号店がドイツにてオープンしました。</li>
-                                <li>2017/04/01 春メニュー提供開始しました。</li>
-                                <li>2017/01/01 Batty's Coffee Standオープンしました。</li>
-                            </ul>
-                </div>
             <div class="l-footerNav">
                 <div class="l-container l-container--full">
                     <nav class="m-navigation m-navigation--center">

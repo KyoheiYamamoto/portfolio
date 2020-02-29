@@ -112,4 +112,13 @@ class portfolioController extends Controller
         $portfolios->delete();
         return redirect('admin/portfolio/');
     }
+    public function detail(Request $request)
+    {
+        // XXXXX Modelからデータを取得する
+        $portfolios = Portfolio::find($request->id);
+        if (empty($portfolios)) {
+          abort(404);
+        }
+        return view('admin.portfolio.detail', ['portfolio' => $portfolios]);
+    }
 }
