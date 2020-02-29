@@ -54,22 +54,24 @@
                     </div>
                 </div>
                 <div class="row">
-                <div class="flexbox">
-                    <div class="item">
+                    <div class="col-md-8 mx-auto">
                         @foreach($posts as $portfolios)
-                        @if ($portfolios->image_path1)
-                        <div class="img-content">
-                            <img src="{{ asset('storage/image/' . $portfolios->image_path1) }}" alt="image" class="img-size" />
-                        </div>
-                        <div class='content-box'>
-                            <div class="form-group row">
-                                <label class="col-md-2" for="title">宿名</label>
-                                <div class="col-md-10">
-                                    {{ $portfolios->title }}
-                                </div>
+                        <div class="flexbox">
+                             <div class="item">
+                                <div class='content-boxs'>
+                                    <div class="form-group row">
+                                    @if ($portfolios->image_path1)
+                                        <div class="img-contents">
+                                            <img src="{{ asset('storage/image/' . $portfolios->image_path1) }}" alt="image" class="img-size" />
+                                        </div>
+                                        @endif
+                                        <label class="col-md-2" for="title">宿名</label>
+                                        <div class="col-md-10">
+                                            {{ $portfolios->title }}
+                                        </div>
+                                    </div>
                             </div>
                         </div>
-                        @endif
                     </div>
                     @endforeach
                 </div>
@@ -108,4 +110,3 @@
         </footer>
         @endsection
     </div>
-© 2020 GitHub, Inc.
