@@ -58,29 +58,94 @@
                         <input id="star1" type="radio" name="star" value="1" />
                         <label for="star1">★</label>
                     </div>
+
                     <div class="form-group row">
                         <label class="col-md-3" for="title">画像</label>
                         <div class="col-md-10">
-                            <input type="file" class="form-control-file" name="image1">
-                            <!-- CSS -->
-                            <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
-                            <!-- JS -->
-                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-                            <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
 
-                            <input type="file" class="form-control-file" name="image2">
-                            <!-- CSS -->
-                            <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
-                            <!-- JS -->
-                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-                            <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
+                                    <!-- 1枚目の画像 -->
+                                    <input type="file" class="form-control-file" name="image1">
+                                    <!-- CSS -->
+                                    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
+                                    <!-- JS -->
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
+                                        <h3><i class="fa fa-crop"></i> cropperのデモ </h3>
+                                        <!-- 切り抜きボタン -->
+                                        <a id="getData" class="btn btn-primary">Get Data</a>
+                                        <br><br>
+                                            <div class="cropper-example-1">
+                                            <!-- bladeテンプレートを使用していれば asset()や url() 関数が使えます -->
+                                            <img id="img" class="img-responsive" src="./img/art.jpg" alt="">
+                                            </div>
+                                                <script type="text/javascript">
+                                                    // init
+                                                    // class='cropper-example-1のimgタグに適用'
+                                                    var $image = $('.cropper-example-1 > img'),replaced;
 
-                            <input type="file" class="form-control-file" name="image3">
-                            <!-- CSS -->
-                            <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
-                            <!-- JS -->
-                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-                            <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
+                                                    //crop options
+                                                    // id='imgに適用'
+                                                    $('#img').cropper({
+                                                    aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
+
+                                                    });
+                                                </script>
+
+                                    <!--2枚目の画像 -->
+                                    <input type="file" class="form-control-file" name="image2">
+                                    <!-- CSS -->
+                                    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
+                                    <!-- JS -->
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
+                                    <h3><i class="fa fa-crop"></i> cropperのデモ </h3>
+                                        <!-- 切り抜きボタン -->
+                                        <a id="getData" class="btn btn-primary">Get Data</a>
+                                        <br><br>
+                                            <div class="cropper-example-1">
+                                            <!-- bladeテンプレートを使用していれば asset()や url() 関数が使えます -->
+                                            <img id="img" class="img-responsive" src="./img/art.jpg" alt="">
+                                            </div>
+                                                <script type="text/javascript">
+                                                    // init
+                                                    // class='cropper-example-1のimgタグに適用'
+                                                    var $image = $('.cropper-example-1 > img'),replaced;
+
+                                                    //crop options
+                                                    // id='imgに適用'
+                                                    $('#img').cropper({
+                                                    aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
+
+                                                    });
+                                                </script>
+
+                                    <!-- 3枚目の画像 -->
+                                    <input type="file" class="form-control-file" name="image3">
+                                    <!-- CSS -->
+                                    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
+                                    <!-- JS -->
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
+                                    <h3><i class="fa fa-crop"></i> cropperのデモ </h3>
+                                        <!-- 切り抜きボタン -->
+                                        <a id="getData" class="btn btn-primary">Get Data</a>
+                                        <br><br>
+                                            <div class="cropper-example-1">
+                                            <!-- bladeテンプレートを使用していれば asset()や url() 関数が使えます -->
+                                            <img id="img" class="img-responsive" src="./img/art.jpg" alt="">
+                                            </div>
+                                                <script type="text/javascript">
+                                                    // init
+                                                    // class='cropper-example-1のimgタグに適用'
+                                                    var $image = $('.cropper-example-1 > img'),replaced;
+
+                                                    //crop options
+                                                    // id='imgに適用'
+                                                    $('#img').cropper({
+                                                    aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
+
+                                                    });
+                                                </script>
 
                         </div>
                     </div>
@@ -98,7 +163,6 @@
                     </div>
                     {{ csrf_field() }}
                     <input type="submit" class="btn btn-primary" value="更新">
-                    <!--住所や電話番号を追加する 1/19-->
                 </form>
             </div>
         </div>
