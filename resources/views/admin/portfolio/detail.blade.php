@@ -8,7 +8,7 @@
                         <li><a href="#">TOP</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        </li>
                     </ul>
                 </div>
                 <div class="row">
@@ -86,7 +86,8 @@
                             <li>PRODUCT</a></li>
                             <li>ABOUT</a></li>
                             <li>NEWS</a></li>
-                            <li>CONTACT</a></li>
+                            <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">お問い合わせ</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>

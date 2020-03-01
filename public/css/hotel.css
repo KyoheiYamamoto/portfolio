@@ -71,6 +71,7 @@ body {
 .col-md-2{
   font-size: 20px;
 }
+/*--検索ボタンのスタイル変更*/
 .btn-primarys {
   color: #fff;
   background-color: #3490dc;
@@ -226,7 +227,7 @@ img {
   margin-left: 40px;
   color:white;
 }
- /* フッター */
+ /* フッターのスタイル */
 .l-footer {
   background-color: #656c6e;
   padding: 35px 0;

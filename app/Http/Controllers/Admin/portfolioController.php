@@ -114,7 +114,7 @@ class portfolioController extends Controller
     }
     public function detail(Request $request)
     {
-        // XXXXX Modelからデータを取得する
+        // portfolio Modelからデータを取得する
         $portfolios = Portfolio::find($request->id);
         if (empty($portfolios)) {
           abort(404);
@@ -122,4 +122,3 @@ class portfolioController extends Controller
         return view('admin.portfolio.detail', ['portfolio' => $portfolios]);
     }
 }
-
