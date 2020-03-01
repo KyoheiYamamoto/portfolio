@@ -71,9 +71,20 @@ body {
 .col-md-2{
   font-size: 20px;
 }
-.col-md-10{
-font-size: 18px;
+.btn-primarys {
+  color: #fff;
+  background-color: #3490dc;
+  border-color: #3490dc;
+  text-align:center;
+  position:relative;
+  left:420px;
+  bottom:37px;
 }
+.col-md-9{
+  font-size: 18px;
+  padding-right: 200px;
+  }
+
 /* 画像サイズ変更 */
 .img-content{
   text-align:center;
@@ -259,7 +270,18 @@ img {
 div {
   display: block;
 }
-
+.m-navigation--center li a {
+  padding: 0;
+  border: none;
+}
+.m-navigation li a {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Gill Sans Std Book", sans-serif;
+  letter-spacing: 0.1em;
+  padding-bottom: 8px;
+  border-bottom: 2px solid transparent;
+}
 
 /*Cropperを使ってトリミングをしながら画像アップロード  */
 

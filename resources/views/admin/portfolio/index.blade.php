@@ -8,7 +8,8 @@
             <li><a href="#">TOP</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Menu</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">Contact</a>
+            </li>
         </ul>
     </div>
     <h4 class="m-concept-title m-concept--index">
@@ -44,9 +45,9 @@
                     <div class="col-md-8">
                         <input type="text" class="form-control" name="cond_title" value="{{ $cond_title }}">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         {{ csrf_field() }}
-                        <input type="submit" class="btn btn-primary" value="検索">
+                        <input type="submit" class="btn btn-primarys" value="検索">
                     </div>
                 </div>
             </form>
@@ -92,7 +93,8 @@
                     <li>PRODUCT</a></li>
                     <li>ABOUT</a></li>
                     <li>NEWS</a></li>
-                    <li>CONTACT</a></li>
+                    <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">お問い合わせ</a>
+                    </li>
                 </ul>
             </nav>
         </div>
