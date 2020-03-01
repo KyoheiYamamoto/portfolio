@@ -55,8 +55,8 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8 mx-auto">
+                    <div class="flexbox">
                         @foreach($posts as $portfolios)
-                        <div class="flexbox">
                              <div class="item">
                                 <div class='content-boxs'>
                                     <div class="form-group row">
@@ -70,13 +70,13 @@
                                             {{ $portfolios->title }}
                                         </div>
                                     </div>
+                               </div>
                             </div>
-                        </div>
-                    </div>
-                    @endforeach
+                            @endforeach
+                     </div>
                 </div>
             </div>
-            <div class="card-contents">
+                <div class="card-contents">
                         <h3 class="text-title">NEWS</h3>
                             <ul class="information-list">
                                 <li>2017/05/01 2号店がドイツにてオープンしました。</li>
@@ -84,29 +84,29 @@
                                 <li>2017/01/01 Batty's Coffee Standオープンしました。</li>
                             </ul>
                 </div>
-            <div class="l-footerNav">
-                <div class="l-container l-container--full">
-                    <nav class="m-navigation m-navigation--center">
-                        <ul>
-                            <li>TOP</a></li>
-                            <li>PRODUCT</a></li>
-                            <li>ABOUT</a></li>
-                            <li>NEWS</a></li>
-                            <li>CONTACT</a></li>
-                        </ul>
-                    </nav>
+                <div class="l-footerNav">
+                    <div class="l-container l-container--full">
+                        <nav class="m-navigation m-navigation--center">
+                            <ul>
+                                <li>TOP</a></li>
+                                <li>PRODUCT</a></li>
+                                <li>ABOUT</a></li>
+                                <li>NEWS</a></li>
+                                <li>CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-            </div>
-        <footer class="l-footer">
-            <div class="l-container l-container--narrow">
-                <h1 class="m-siteLogo m-siteLogo--small">
-                    <a href="https://pas-pol.jp">PAS-POL -旅のモノづくりブランド-｜TABIPPO</a>
-                </h1>
+                <footer class="l-footer">
+                    <div class="l-container l-container--narrow">
+                        <h1 class="m-siteLogo m-siteLogo--small">
+                            <a href="https://pas-pol.jp">PAS-POL -旅のモノづくりブランド-｜TABIPPO</a>
+                        </h1>
 
-                <div class="m-copyRight">
-                    <small>Copyright © 2020 PAS-POL -旅のモノづくりブランド-｜TABIPPO All rights reserved.</small>
-                </div>
-            </div>
-        </footer>
+                        <div class="m-copyRight">
+                            <small>Copyright © 2020 PAS-POL -旅のモノづくりブランド-｜TABIPPO All rights reserved.</small>
+                        </div>
+                    </div>
+                </footer>
         @endsection
     </div>
