@@ -14,12 +14,15 @@ $(document).ready(function () {
       $('.autoplay').slick({
         autoplay: true,
       });
-        var particles = Particles.init({
-      selector: '.background',
-    sizeVariations: 10,
-    color: ['#00bbdd', '#404B69', '#DBEDF3'],
-    connectParticles: true
- });
+      window.onload = function() {
+        Particles.init({
+          selector: '.background',
+          sizeVariations: 50,
+          color: [
+            '#0bd', 'rgba(0,187,221,.5)', 'rgba(0,187,221,.2)'
+          ]
+        });
+      };
     });
 // getDataボタンが押された時の処理
 $('#getData').on('click', function(){

@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <h2>宿泊先一覧</h2>
+        <h2>〇〇</h2>
         <ul class="header-navigation">
             <li><a href="#">TOP</a></li>
             <li><a href="#">About</a></li>
@@ -12,28 +12,34 @@
             </li>
         </ul>
     </div>
+    <div class="containers">
+        <div class="boxs">
     <h4 class="m-concept-title m-concept--index">
         新しい宿さがし
         <span style="letter-spacing:-20px;">。</span>
     </h4>
-    <div class="m-concept-read m-concept-read--index">
-        <p>世界中の宿へ
-            <br>安く手軽に探せる。
-            <br>探しているだけでわくわくする。
-        </p>
-        <p>それは新しい時代の "宿泊へ"
-            <p>そして、人と人が繋がる
-                <br>こんな時代だからこそ、
-                <br>僕たちは、みんなでひとつのせかいを
-                <br>泊まることで描いていきたい。
-            </p>
-            <p class="m-concept-siteLogo">〇〇</p>
-            <p>それは、自分と世界を広がる
-                <br>宿との出会いができるサービス
-            </p>
+            <div class="m-concept-read m-concept-read--index">
+                <p>世界中の宿へ
+                    <br>安く手軽に探せる。
+                    <br>探しているだけでわくわくする。
+                </p>
+                <p>それは新しい時代の "宿泊へ"
+                    <p>そして、人と人が繋がる
+                        <br>こんな時代だからこそ、
+                        <br>僕たちは、みんなでひとつのせかいを
+                        <br>泊まることで描いていきたい。
+                    </p>
+                    <p class="m-concept-siteLogo">〇〇</p>
+                    <p>それは、自分と世界を広がる
+                        <br>宿との出会いができるサービス
+                    </p>
+            </div>
+        </div>
     </div>
     <canvas class="background"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+
+
     <div class="row">
         <div class="col-md-4">
             <a href="{{ action('Admin\portfolioController@add') }}" role="button" class="btn btn-primary">新規作成</a>
