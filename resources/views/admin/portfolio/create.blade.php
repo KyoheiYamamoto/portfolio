@@ -45,7 +45,7 @@
                             <textarea class="form-control" name="amenities" rows="20">{{ old('amenities') }}</textarea>
                         </div>
                     </div>
-                    <label class="col-md-3" for="body">評価</label>
+                    <label class="col-md-7" for="body">評価</label>
                     <div class="stars">
                         <input id="star5" type="radio" name="star" value="5" />
                         <label for="star5">★</label>
@@ -63,89 +63,89 @@
                         <label class="col-md-3" for="title">画像</label>
                         <div class="col-md-10">
 
-                                    <!-- 1枚目の画像 -->
-                                    <input type="file" class="form-control-file" name="image1">
-                                    <!-- CSS -->
-                                    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
-                                    <!-- JS -->
-                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
-                                        <h3><i class="fa fa-crop"></i> cropperのデモ </h3>
-                                        <!-- 切り抜きボタン -->
-                                        <a id="getData" class="btn btn-primary">Get Data</a>
-                                        <br><br>
-                                            <div class="cropper-example-1">
-                                            <!-- bladeテンプレートを使用していれば asset()や url() 関数が使えます -->
-                                            <img id="img" class="img-responsive" src="./img/art.jpg" alt="">
-                                            </div>
-                                                <script type="text/javascript">
-                                                    // init
-                                                    // class='cropper-example-1のimgタグに適用'
-                                                    var $image = $('.cropper-example-1 > img'),replaced;
-
-                                                    //crop options
-                                                    // id='imgに適用'
-                                                    $('#img').cropper({
-                                                    aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
-
-                                                    });
-                                                </script>
-
-                                    <!--2枚目の画像 -->
-                                    <input type="file" class="form-control-file" name="image2">
-                                    <!-- CSS -->
-                                    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
-                                    <!-- JS -->
-                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
+                                <!-- 1枚目の画像 -->
+                                <input type="file" class="form-control-file" name="image1">
+                                <!-- CSS -->
+                                <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
+                                <!-- JS -->
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
                                     <h3><i class="fa fa-crop"></i> cropperのデモ </h3>
-                                        <!-- 切り抜きボタン -->
-                                        <a id="getData" class="btn btn-primary">Get Data</a>
-                                        <br><br>
-                                            <div class="cropper-example-1">
-                                            <!-- bladeテンプレートを使用していれば asset()や url() 関数が使えます -->
-                                            <img id="img" class="img-responsive" src="./img/art.jpg" alt="">
-                                            </div>
-                                                <script type="text/javascript">
-                                                    // init
-                                                    // class='cropper-example-1のimgタグに適用'
-                                                    var $image = $('.cropper-example-1 > img'),replaced;
+                                    <!-- 切り抜きボタン -->
+                                    <a id="getData" class="btn btn-primary">Get Data</a>
+                                    <br><br>
+                                        <div class="cropper-example-1">
+                                        <!-- bladeテンプレートを使用していれば asset()や url() 関数が使えます -->
+                                        <img id="img" class="img-responsive" src="./img/art.jpg" alt="">
+                                        </div>
+                                            <script type="text/javascript">
+                                                // init
+                                                // class='cropper-example-1のimgタグに適用'
+                                                var $image = $('.cropper-example-1 > img'),replaced;
 
-                                                    //crop options
-                                                    // id='imgに適用'
-                                                    $('#img').cropper({
-                                                    aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
+                                                //crop options
+                                                // id='imgに適用'
+                                                $('#img').cropper({
+                                                aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
 
-                                                    });
-                                                </script>
+                                                });
+                                            </script>
 
-                                    <!-- 3枚目の画像 -->
-                                    <input type="file" class="form-control-file" name="image3">
-                                    <!-- CSS -->
-                                    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
-                                    <!-- JS -->
-                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
-                                    <h3><i class="fa fa-crop"></i> cropperのデモ </h3>
-                                        <!-- 切り抜きボタン -->
-                                        <a id="getData" class="btn btn-primary">Get Data</a>
-                                        <br><br>
-                                            <div class="cropper-example-1">
-                                            <!-- bladeテンプレートを使用していれば asset()や url() 関数が使えます -->
-                                            <img id="img" class="img-responsive" src="./img/art.jpg" alt="">
-                                            </div>
-                                                <script type="text/javascript">
-                                                    // init
-                                                    // class='cropper-example-1のimgタグに適用'
-                                                    var $image = $('.cropper-example-1 > img'),replaced;
+                                <!--2枚目の画像 -->
+                                <input type="file" class="form-control-file" name="image2">
+                                <!-- CSS -->
+                                <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
+                                <!-- JS -->
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
+                                <h3><i class="fa fa-crop"></i> cropperのデモ </h3>
+                                    <!-- 切り抜きボタン -->
+                                    <a id="getData" class="btn btn-primary">Get Data</a>
+                                    <br><br>
+                                        <div class="cropper-example-1">
+                                        <!-- bladeテンプレートを使用していれば asset()や url() 関数が使えます -->
+                                        <img id="img" class="img-responsive" src="./img/art.jpg" alt="">
+                                        </div>
+                                            <script type="text/javascript">
+                                                // init
+                                                // class='cropper-example-1のimgタグに適用'
+                                                var $image = $('.cropper-example-1 > img'),replaced;
 
-                                                    //crop options
-                                                    // id='imgに適用'
-                                                    $('#img').cropper({
-                                                    aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
+                                                //crop options
+                                                // id='imgに適用'
+                                                $('#img').cropper({
+                                                aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
 
-                                                    });
-                                                </script>
+                                                });
+                                            </script>
+
+                                <!-- 3枚目の画像 -->
+                                <input type="file" class="form-control-file" name="image3">
+                                <!-- CSS -->
+                                <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
+                                <!-- JS -->
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
+                                <h3><i class="fa fa-crop"></i> cropperのデモ </h3>
+                                    <!-- 切り抜きボタン -->
+                                    <a id="getData" class="btn btn-primary">Get Data</a>
+                                    <br><br>
+                                        <div class="cropper-example-1">
+                                        <!-- bladeテンプレートを使用していれば asset()や url() 関数が使えます -->
+                                        <img id="img" class="img-responsive" src="./img/art.jpg" alt="">
+                                        </div>
+                                            <script type="text/javascript">
+                                                // init
+                                                // class='cropper-example-1のimgタグに適用'
+                                                var $image = $('.cropper-example-1 > img'),replaced;
+
+                                                //crop options
+                                                // id='imgに適用'
+                                                $('#img').cropper({
+                                                aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
+
+                                                });
+                                            </script>
 
                         </div>
                     </div>

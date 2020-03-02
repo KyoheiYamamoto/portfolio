@@ -47,7 +47,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: left;
-  margin-right: -15px;
+  margin-right: 200px;
 }
 .stars input[type='radio']{
   display: none;
@@ -64,8 +64,14 @@ body {
 .stars input[type='radio']:checked ~ label{
   color: #fc0;
 }
+
+.col-md-7{
+  font-size: 20px;
+  margin-right: 200px;
+}
+
 .col-md-3{
-  font-size: 18px;
+  font-size: 20px;
 }
  /*--index.blede.phpのスタイル変更*/
 .col-md-2{
@@ -111,6 +117,7 @@ img {
 	overflow:hidden;
 	border:#CCC solid 2px;
 }
+
 /* headermenu */
 .header-navigation {
   width: 100%;
@@ -132,6 +139,7 @@ img {
   color: #333;
   text-decoration: none;
 }
+
 /* infomation */
 .text-title {
   font-size: 24px;
@@ -158,6 +166,7 @@ img {
 .information-list li {
   margin-bottom: 10px;
 }
+
 /* コンセプト文 */
 .m-concept-read--index {
   max-width: 370px;
@@ -174,6 +183,7 @@ img {
     background-size: 500px 84px;
     margin: 35px auto;
  }
+
  /* タイトル文 */
     .m-concept-title {
       text-align: center;
@@ -186,6 +196,7 @@ img {
     font-size: 2em;
     margin: 0.67em 0;
 }
+
  /* フッターナビゲーション */
 .l-footerNav {
   background-color: #939899;
@@ -227,7 +238,8 @@ img {
   margin-left: 40px;
   color:white;
 }
- /* フッターのスタイル */
+
+/* フッターのスタイル */
 .l-footer {
   background-color: #656c6e;
   padding: 35px 0;
