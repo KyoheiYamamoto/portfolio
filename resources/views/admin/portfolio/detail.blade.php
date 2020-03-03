@@ -3,11 +3,12 @@
 @section('content')
     <div class="container">
                 <div class="row">
-                    <h2>宿泊先一覧</h2>
+                    <h2>〇〇</h2>
                     <ul class="header-navigation">
-                        <li><a href="#">TOP</a></li>
+                        <li><a href="http://127.0.0.1:8000/admin/portfolio/">TOP</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
+                        <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -78,6 +79,11 @@
                     </div>
                 </div>
             </div>
+            <section class="l-section l-section--backToTop">
+                <div class="m-backToTop">
+                  <a href="https://pas-pol.jp" class="m-button m-button--back">BACK TO TOP</a>
+                </div>
+             </section>
             <div class="l-footerNav">
                 <div class="l-container l-container--full">
                     <nav class="m-navigation m-navigation--center">

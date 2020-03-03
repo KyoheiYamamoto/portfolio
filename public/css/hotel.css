@@ -358,7 +358,7 @@ div {
   z-index: 0;
 }
 
-/* Default Styling */
+/* 水玉模様Default Styling */
 .containers {
   display: flex;
   justify-content: center;
@@ -380,4 +380,38 @@ div {
 }
 a {
   color: #0bd;
+}
+
+/* TOPページに戻るボタン */
+element.style {
+}
+.l-section.l-section--backToTop {
+    padding: 110px 0 140px;
+}
+.l-section {
+    width: 100%;
+    background-color: #f6f6f6;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+.m-backToTop {
+  text-align: center;
+}
+.m-button--back {
+  width: 210px;
+  background: url(../img/button-arrow-back@2x.png) no-repeat;
+  background-size: 7px 12px;
+  background-position: 14px 50%;
+}
+.m-button {
+  display: inline-block;
+  width: 162px;
+  height: 46px;
+  line-height: 48px;
+  font-size: 14px;
+  color: #13191b;
+  border: 1px solid #13191b;
+  text-align: center;
+  font-family: "Gill Sans Std Book", sans-serif;
+  letter-spacing: 0.1em;
 }
