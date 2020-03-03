@@ -5,8 +5,8 @@
     <div class="row">
         <h2>〇〇</h2>
         <ul class="header-navigation">
-            <li><a href="http://127.0.0.1:8000/admin/portfolio/">TOP</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">TOP</a></li>
+            <li><a href="#">News</a></li>
             <li><a href="#">HOTEL</a></li>
             <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">Contact</a>
             </li>
@@ -72,7 +72,10 @@
                                     class="img-size" />
                             </div>
                             @endif
-                            <label class="col-md-2" for="title">宿名</label>
+                            <label class="col-md-2" for="title">
+                            <a href="{{ action('Admin\portfolioController@detail') }}">宿名
+                            </a>
+                            </label>
                             <div class="col-md-10">
                                 {{ $portfolios->title }}
                             </div>
@@ -89,13 +92,14 @@
             <li>2017/05/01 2号店がドイツにてオープンしました。</li>
             <li>2017/04/01 春メニュー提供開始しました。</li>
             <li>2017/01/01 Batty's Coffee Standオープンしました。</li>
+            <li>2017/05/01 2号店がドイツにてオープンしました。</li>
         </ul>
     </div>
     <div class="l-footerNav">
         <div class="l-container l-container--full">
             <nav class="m-navigation m-navigation--center">
                 <ul>
-                    <li><a href="http://127.0.0.1:8000/admin/portfolio/">TOP</a></li>
+                    <li><a href="#">TOP</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">HOTEL</a></li>
                     <li><a href="#">NEWS</a></li>

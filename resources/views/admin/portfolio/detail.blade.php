@@ -5,9 +5,9 @@
                 <div class="row">
                     <h2>〇〇</h2>
                     <ul class="header-navigation">
-                        <li><a href="http://127.0.0.1:8000/admin/portfolio/">TOP</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
+                    <li><a href="{{ action('Admin\portfolioController@index') }}">TOP</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">HOTEL</a></li>
                         <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">Contact</a>
                         </li>
                     </ul>
@@ -81,19 +81,19 @@
             </div>
             <section class="l-section l-section--backToTop">
                 <div class="m-backToTop">
-                  <a href="https://pas-pol.jp" class="m-button m-button--back">BACK TO TOP</a>
+                  <a href="{{ action('Admin\portfolioController@index') }}" class="m-button m-button--back">BACK TO TOP</a>
                 </div>
              </section>
             <div class="l-footerNav">
                 <div class="l-container l-container--full">
                     <nav class="m-navigation m-navigation--center">
                         <ul>
-                            <li>TOP</a></li>
-                            <li>PRODUCT</a></li>
-                            <li>ABOUT</a></li>
-                            <li>NEWS</a></li>
-                            <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">お問い合わせ</a>
-                            </li>
+                        <li><a href="{{ action('Admin\portfolioController@index') }}">TOP</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">HOTEL</a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">お問い合わせ</a>
+                        </li>
                         </ul>
                     </nav>
                 </div>

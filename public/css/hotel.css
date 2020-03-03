@@ -415,3 +415,8 @@ element.style {
   font-family: "Gill Sans Std Book", sans-serif;
   letter-spacing: 0.1em;
 }
+
+.l-sections {
+  width: 100%;
+  padding-top: 110px;
+  padding-bottom: 110px;
