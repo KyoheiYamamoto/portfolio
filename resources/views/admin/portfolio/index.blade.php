@@ -73,8 +73,7 @@
                             </div>
                             @endif
                             <label class="col-md-2" for="title">
-                            <a href="{{ action('Admin\portfolioController@detail') }}">宿名
-                            </a>
+                            <a href="{{ action('Admin\portfolioController@detail') }}">宿名</a>
                             </label>
                             <div class="col-md-10">
                                 {{ $portfolios->title }}

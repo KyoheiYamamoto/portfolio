@@ -88,10 +88,11 @@
                 <div class="l-container l-container--full">
                     <nav class="m-navigation m-navigation--center">
                         <ul>
+                            <!-- Topページに戻る -->
                         <li><a href="{{ action('Admin\portfolioController@index') }}">TOP</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="{{ action('Admin\portfolioController@index') }}">About</a></li>
                         <li><a href="#">HOTEL</a></li>
-                        <li><a href="#">NEWS</a></li>
+                        <li><a href="{{ action('Admin\portfolioController@index') }}">NEWS</a></li>
                         <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">お問い合わせ</a>
                         </li>
                         </ul>
