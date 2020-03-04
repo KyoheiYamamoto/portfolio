@@ -5,8 +5,8 @@
     <div class="row">
         <h2>〇〇</h2>
         <ul class="header-navigation">
-            <li><a href="#">TOP</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="{{ action('Admin\portfolioController@index') }}">TOP</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">HOTEL</a></li>
             <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">Contact</a>
             </li>
@@ -38,8 +38,6 @@
     </div>
     <canvas class="background"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-
-
     <div class="row">
         <div class="col-md-4">
             <a href="{{ action('Admin\portfolioController@add') }}" role="button" class="btn btn-primary">新規作成</a>
@@ -68,15 +66,17 @@
                         <div class="form-group row">
                             @if ($portfolios->image_path1)
                             <div class="img-contents">
+                                <a href="{{ action('Admin\portfolioController@detail', ['id' => $portfolios->id]) }}">
                                 <img src="{{ asset('storage/image/' . $portfolios->image_path1) }}" alt="image"
                                     class="img-size" />
+                                </a>
                             </div>
                             @endif
-                            <label class="col-md-2" for="title">
-                            <a href="{{ action('Admin\portfolioController@detail') }}">宿名</a>
-                            </label>
+                            <label class="col-md-2" for="title">宿名</label>
                             <div class="col-md-10">
+                                <a href="{{ action('Admin\portfolioController@detail', ['id' => $portfolios->id]) }}">
                                 {{ $portfolios->title }}
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -91,15 +91,14 @@
             <li>2017/05/01 2号店がドイツにてオープンしました。</li>
             <li>2017/04/01 春メニュー提供開始しました。</li>
             <li>2017/01/01 Batty's Coffee Standオープンしました。</li>
-            <li>2017/05/01 2号店がドイツにてオープンしました。</li>
         </ul>
     </div>
     <div class="l-footerNav">
         <div class="l-container l-container--full">
             <nav class="m-navigation m-navigation--center">
                 <ul>
-                    <li><a href="#">TOP</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="{{ action('Admin\portfolioController@index') }}">TOP</a></li>
+                    <li><a href="{{ action('Admin\portfolioController@index') }}">About</a></li>
                     <li><a href="#">HOTEL</a></li>
                     <li><a href="#">NEWS</a></li>
                     <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">お問い合わせ</a>

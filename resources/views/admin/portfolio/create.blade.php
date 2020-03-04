@@ -164,11 +164,11 @@
                     {{ csrf_field() }}
                     <input type="submit" class="btn btn-primary" value="更新">
                 </form>
-                <section class="l-sections l-section--backToTop">
-                    <div class="m-backToTop">
-                    <a href="#" class="m-button m-button--back">BACK TO TOP</a>
-                    </div>
-                </section> 
+                <section class="l-section l-section--backToTop">
+                <div class="m-backToTop">
+                  <a href="{{ action('Admin\portfolioController@index') }}" class="m-button m-button--back">BACK TO TOP</a>
+                </div>
+             </section> 
             </div>
         </div>
     </div>
