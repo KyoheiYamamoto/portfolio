@@ -7,7 +7,8 @@
         <ul class="header-navigation">
             <li><a href="{{ action('Admin\portfolioController@index') }}">TOP</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">HOTEL</a></li>
+            <li><a href=“#hotel”>HOTEL</a></li>
+            <li><a href=“#news”>NEWS</a></li>
             <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">Contact</a>
             </li>
         </ul>
@@ -42,7 +43,7 @@
         <div class="col-md-4">
             <a href="{{ action('Admin\portfolioController@add') }}" role="button" class="btn btn-primary">新規作成</a>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8"id=“hotel”>
             <form action="{{ action('Admin\portfolioController@index') }}" method="get">
                 <div class="form-group row">
                     <label class="col-md-2">宿名</label>
@@ -86,7 +87,7 @@
         </div>
     </div>
     <div class="card-contents">
-        <h3 class="text-title">NEWS</h3>
+        <h3 id=“news” class="text-title">NEWS</h3>
         <ul class="information-list">
             <li>2017/05/01 2号店がドイツにてオープンしました。</li>
             <li>2017/04/01 春メニュー提供開始しました。</li>
@@ -99,8 +100,8 @@
                 <ul>
                     <li><a href="{{ action('Admin\portfolioController@index') }}">TOP</a></li>
                     <li><a href="{{ action('Admin\portfolioController@index') }}">About</a></li>
-                    <li><a href="#">HOTEL</a></li>
-                    <li><a href="#">NEWS</a></li>
+                    <li><a href=“#hotel”>HOTEL</a></li>
+                    <li><a href=“#news”>NEWS</a></li>
                     <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">お問い合わせ</a>
                     </li>
                 </ul>
