@@ -53,6 +53,7 @@ class portfolioController extends Controller
     // リサイズファイルの調整
     private static function resizeFile($file){
         // 画像を縦300:横400でリサイズする
+        dd(file_get_contents($file->getRealPath()));
         $image = \Image::make(file_get_contents($file->getRealPath()));
         $image
             ->resize(300, 400)
