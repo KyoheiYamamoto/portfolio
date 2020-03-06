@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Portfolio;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Storage;
 class portfolioController extends Controller
 {
     public function add()
@@ -53,7 +54,7 @@ class portfolioController extends Controller
     // リサイズファイルの調整
     private static function resizeFile($file){
         // 画像を縦300:横400でリサイズする
-        dd(file_get_contents($file->getRealPath()));
+        dd($file->getRealPath());
         $image = \Image::make(file_get_contents($file->getRealPath()));
         $image
             ->resize(300, 400)
