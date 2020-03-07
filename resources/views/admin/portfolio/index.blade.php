@@ -43,7 +43,7 @@
         <div class="col-md-4">
             <a href="{{ action('Admin\portfolioController@add') }}" role="button" class="btn btn-primary">新規作成</a>
         </div>
-        <div class="col-md-8"id=“hotel”>
+        <div class="col-md-8" id=“hotel”>
             <form action="{{ action('Admin\portfolioController@index') }}" method="get">
                 <div class="form-group row">
                     <label class="col-md-2">宿名</label>
@@ -99,7 +99,7 @@
             <nav class="m-navigation m-navigation--center">
                 <ul>
                     <li><a href="{{ action('Admin\portfolioController@index') }}">TOP</a></li>
-                    <li><a href="{{ action('Admin\portfolioController@index') }}">About</a></li>
+                    <li><a href=“#”>About</a></li>
                     <li><a href=“#hotel”>HOTEL</a></li>
                     <li><a href=“#news”>NEWS</a></li>
                     <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">お問い合わせ</a>

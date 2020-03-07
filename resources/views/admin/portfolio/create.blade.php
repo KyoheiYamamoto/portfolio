@@ -70,7 +70,7 @@
                                 <!-- JS -->
                                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
                                 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
-                                    <h3><i class="fa fa-crop"></i> cropperのデモ </h3>
+
                                     <!-- 切り抜きボタン -->
                                     <a id="getData" class="btn btn-primary">Get Data</a>
                                     <br><br>
@@ -98,7 +98,7 @@
                                 <!-- JS -->
                                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
                                 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
-                                <h3><i class="fa fa-crop"></i> cropperのデモ </h3>
+
                                     <!-- 切り抜きボタン -->
                                     <a id="getData" class="btn btn-primary">Get Data</a>
                                     <br><br>
@@ -126,8 +126,7 @@
                                 <!-- JS -->
                                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
                                 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.js"></script>
-                                <h3><i class="fa fa-crop"></i> cropperのデモ </h3>
-                                    <!-- 切り抜きボタン -->
+
                                     <a id="getData" class="btn btn-primary">Get Data</a>
                                     <br><br>
                                         <div class="cropper-example-1">
