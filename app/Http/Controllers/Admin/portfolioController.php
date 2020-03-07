@@ -20,7 +20,7 @@ class portfolioController extends Controller
         $portfolios = new Portfolio;
         $form = $request->all();
         // フォームから画像が送信されてきたら、保存して、$portfolios->image_path に画像のパスを保存する
-        if (!empty($form['image1'])) { {
+        if (!empty($form['image1'])) {
             // リサイズ
             Self::resizeFile($form['image1']);
             $path1 = $request->file('image1')->store('public/image');

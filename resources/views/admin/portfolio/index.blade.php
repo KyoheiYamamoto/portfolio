@@ -89,9 +89,9 @@
     <div class="card-contents">
         <h3 id=“news” class="text-title">NEWS</h3>
         <ul class="information-list">
-            <li>2017/05/01 2号店がドイツにてオープンしました。</li>
-            <li>2017/04/01 春メニュー提供開始しました。</li>
-            <li>2017/01/01 Batty's Coffee Standオープンしました。</li>
+            <li>2017/05/01 ああああ</li>
+            <li>2017/04/01 あああああ</li>
+            <li>2017/01/01 あああああ</li>
         </ul>
     </div>
     <div class="l-footerNav">
