@@ -148,6 +148,7 @@ return [
 
     'attributes' => [
         'title' => '宿名',
-        'body' => 'Wifi、価格、場所',
+        'body' => 'レビュー',
+        'star' => '評価',
         ],
 ];
