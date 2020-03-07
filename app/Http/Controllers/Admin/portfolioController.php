@@ -20,7 +20,7 @@ class portfolioController extends Controller
         $portfolios = new Portfolio;
         $form = $request->all();
         // フォームから画像が送信されてきたら、保存して、$portfolios->image_path に画像のパスを保存する
-        if (isset($form['image1'])) {
+        if (!empty($form['image1'])) { {
             // リサイズ
             Self::resizeFile($form['image1']);
             $path1 = $request->file('image1')->store('public/image');
@@ -28,14 +28,14 @@ class portfolioController extends Controller
         } else {
             $portfolios->image_path1 = null;
         }
-        if (isset($form['image2'])) {
+        if (!empty($form['image2'])) {
             Self::resizeFile($form['image2']);
             $path2 = $request->file('image2')->store('public/image');
             $portfolios->image_path2 = basename($path2);
         } else {
             $portfolios->image_path2 = null;
         }
-        if (isset($form['image3'])) {
+        if (!empty($form['image3'])) {
             Self::resizeFile($form['image3']);
             $path3 = $request->file('image3')->store('public/image');
             $portfolios->image_path3 = basename($path3);
