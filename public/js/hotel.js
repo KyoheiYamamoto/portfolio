@@ -19,7 +19,7 @@ $(document).ready(function () {
           selector: '.background',
           sizeVariations: 50,
           color: [
-            '#0bd', 'rgba(0,187,221,.5)', 'rgba(0,187,221,.2)'
+            '#FFFF66', 'rgba(0,187,221,.5)', 'rgba(0,187,221,.2)','#FFCCFF'
           ]
         });
       };

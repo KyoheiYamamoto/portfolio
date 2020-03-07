@@ -349,11 +349,10 @@ div {
   }
 }
 
-
 .background {
   position: absolute;
   display: block;
-  top: 200px;
+  top: 300px;
   left: 0;
   z-index: 0;
 }
@@ -363,12 +362,13 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 180vh;
+  height: 120vh;
   padding:100px;
 
 }
 .boxs {
   background: #fff;
+  margin-top: 100px;
   border-radius: 5px;
   padding: 36px;
   position: absolute;
