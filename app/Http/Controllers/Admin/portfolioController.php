@@ -19,7 +19,7 @@ class portfolioController extends Controller
         $this->validate($request, portfolio::$rules);
         $portfolios = new Portfolio;
         $form = $request->all();
-        // フォームから画像が送信されてきたら、保存して、$portfolios->image_path に画像のパスを保存する
+        // フォームから画像が送信されてきたら、保存して、$portfolios->image_path に画像のパスを保存
         if (!empty($form['image1'])) {
             // リサイズ
             Self::resizeFile($form['image1']);
@@ -96,7 +96,7 @@ class portfolioController extends Controller
         }
         unset($portfolios_form['_token'], $portfolios_form['remove'], $portfolios_form['image']);
         $portfolios->fill($portfolios_form)->save();
-        // 以下を追記
+
         $history = new History;
         $history->portfolio_id = $portfolios->id;
         $history->edited_at = Carbon::now();
