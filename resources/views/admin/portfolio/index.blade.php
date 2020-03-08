@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <h2>〇〇</h2>
+        <h2>hoteLL</h2>
         <ul class="header-navigation">
             <li><a href="{{ action('Admin\portfolioController@index') }}">TOP</a></li>
             <li><a href="#">About</a></li>
@@ -24,10 +24,11 @@
                     <br>安く手軽に探せる。
                     <br>探しているだけでわくわくする。
                 </p>
-                <p>それは新しい時代の "宿泊へ"
+                <p>新しい時代の "宿泊へ"
                     <p>そして、人と人が繋がる
                         <br>こんな時代だからこそ、
                         <br>僕たちは、みんなでひとつのせかいを
+                        <br>
                         <br>泊まることで描いていきたい。
                     </p>
                     <p class="m-concept-siteLogo">〇〇</p>
@@ -58,7 +59,7 @@
             </form>
         </div>
     </div>
-    <div class="row">
+    <div class="rows">
         <div class="col-md-8 mx-auto">
             <div class="flexbox">
             @foreach($posts as $portfolios)

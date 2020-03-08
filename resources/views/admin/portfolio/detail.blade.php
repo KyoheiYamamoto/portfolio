@@ -3,7 +3,6 @@
 @section('content')
     <div class="container">
                 <div class="row">
-                    <h2>〇〇</h2>
                     <ul class="header-navigation">
                     <li><a href="{{ action('Admin\portfolioController@index') }}">TOP</a></li>
                         <li><a href="#">News</a></li>

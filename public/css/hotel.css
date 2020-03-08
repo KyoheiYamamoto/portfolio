@@ -37,9 +37,9 @@ body {
   
 }
 .container h2 {
-  
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
     padding: 0;
+    font-size: 40px;
   }
 /*--create.blede.phpのスタイル変更*/
 .stars{
@@ -122,6 +122,7 @@ img {
   width: 100%;
   background-color: #fff;
   padding: 20px 0;
+  
 }
 .header-navigation:after{
   clear: both;
@@ -130,9 +131,11 @@ img {
 }
 .header-navigation li {
   float: left;
-  padding: 0 30px;
+  padding: 0 70px;
   text-align: center;
   list-style-type: none;
+  font-size: 20px;
+  
 }
 .header-navigation li a {
   color: #333;
@@ -150,9 +153,12 @@ img {
   padding: 40px;
   display: block;
   margin-bottom: 20px;
-  background-color: #fff;
   overflow: hidden;
+  width: 100%;
+  background-color: #f6f6f6;
+ 
 }
+
 .left-contents {
   width: 600px;
   margin-right: 20px;
@@ -199,18 +205,21 @@ img {
  /* フッターナビゲーション */
 .l-footerNav {
   background-color: #939899;
-  padding: 30px 0;
+  padding: 30px 30px;
   text-align: center;
+  
 }
 .l-container.l-container--full {
   max-width: 100%;
   padding: 0;
+  
 }
 .l-container {
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
   box-sizing: content-box;
+  
 }
 .m-navigation--center ul {
   text-align: center;
@@ -225,6 +234,7 @@ img {
 }
 .m-navigation li:first-child {
   margin-left: 0;
+  font-size: 18px;
 }
 .m-navigation li {
   display: inline-block;
@@ -419,3 +429,7 @@ element.style {
   width: 100%;
   padding-top: 110px;
   padding-bottom: 110px;
+}
+  .rows.col-md-8 mx-auto .col-md-8 .col-md-4{
+    background-color: #fff;
+}
