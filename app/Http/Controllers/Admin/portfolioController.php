@@ -121,3 +121,4 @@ class portfolioController extends Controller
         return view('admin.portfolio.detail', ['portfolio' => $portfolios]);
     }
 }
+

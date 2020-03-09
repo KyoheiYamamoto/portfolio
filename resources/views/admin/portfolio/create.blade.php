@@ -167,7 +167,7 @@
                 <div class="m-backToTop">
                   <a href="{{ action('Admin\portfolioController@index') }}" class="m-button m-button--back">BACK TO TOP</a>
                 </div>
-             </section> 
+             </section>
             </div>
         </div>
     </div>
