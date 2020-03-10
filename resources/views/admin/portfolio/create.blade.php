@@ -155,7 +155,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-3" for="title">URL・電話番号</label>
+                        <label class="col-md-3" for="title">URL</label>
                         <div class="col-md-10">
                             <textarea name="tel" cols="50" rows="3"></textarea>
                         </div>

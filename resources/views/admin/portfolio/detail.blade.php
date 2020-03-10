@@ -101,11 +101,11 @@
         <footer class="l-footer">
             <div class="l-container l-container--narrow">
                 <h1 class="m-siteLogo m-siteLogo--small">
-                    <a href="https://pas-pol.jp">PAS-POL -旅のモノづくりブランド-｜TABIPPO</a>
+                    <a href="https://pas-pol.jp">aaa</a>
                 </h1>
 
                 <div class="m-copyRight">
-                    <small>Copyright © 2020 PAS-POL -旅のモノづくりブランド-｜TABIPPO All rights reserved.</small>
+                    <small>aaaaa</small>
                 </div>
             </div>
         </footer>
