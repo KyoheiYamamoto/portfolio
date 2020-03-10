@@ -69,7 +69,7 @@
                             @if ($portfolios->image_path1)
                             <div class="img-contents">
                                 <a href="{{ action('Admin\portfolioController@detail', ['id' => $portfolios->id]) }}">
-                                <img src="{{ asset('storage/image/' . $portfolios->image_path1) }}" alt="image"
+                                <img src="{{ $portfolios->image_path1 }}" alt="image"
                                     class="img-size" />
                                 </a>
                             </div>

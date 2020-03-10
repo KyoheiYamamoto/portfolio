@@ -89,8 +89,8 @@ class portfolioController extends Controller
         $portfolios = Portfolio::find($request->id);
         $portfolios_form = $request->all();
         if (isset($portfolios_form['image'])) {
-            $path = $request->file('image')->store('public/image');
-            $portfolios->image_path = basename($path);
+            $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
+            $portfolios->image_path = Storage::disk('s3')->url($path);
         } elseif (isset($request->remove)) {
             $portfolios->image_path = null;
         }
@@ -121,4 +121,3 @@ class portfolioController extends Controller
         return view('admin.portfolio.detail', ['portfolio' => $portfolios]);
     }
 }
-
