@@ -112,7 +112,7 @@
     <footer class="l-footer">
         <div class="l-container l-container--narrow">
             <h1 class="m-siteLogo m-siteLogo--small">
-                <a href="https://pas-pol.jp">あああああ/a>
+                <a href="https://pas-pol.jp">あああああ</a>
             </h1>
             <div class="m-copyRight">
                 <small>ああああああ</small>
