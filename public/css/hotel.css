@@ -46,7 +46,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: left;
-  margin-right: 250px;
+  margin-right: 270px;
   font-size: 20px;
 }
 .stars input[type='radio']{
