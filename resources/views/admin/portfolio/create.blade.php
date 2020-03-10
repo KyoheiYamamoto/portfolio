@@ -83,7 +83,7 @@
                                                 // class='cropper-example-1のimgタグに適用'
                                                 var $image = $('.cropper-example-1 > img'),replaced;
 
-                                                //crop options
+                                                //crop option
                                                 // id='imgに適用'
                                                 $('#img').cropper({
                                                 aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
