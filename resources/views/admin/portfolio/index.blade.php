@@ -31,7 +31,7 @@
                         <br>
                         <br>泊まることで描いていきたい。
                     </p>
-                    <p class="m-concept-siteLogo">〇〇</p>
+                    <p class="m-concept-siteLogo">〇</p>
                     <p>それは、自分と世界を広がる
                         <br>宿との出会いができるサービス
                     </p>
