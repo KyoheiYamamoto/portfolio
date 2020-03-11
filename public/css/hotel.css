@@ -105,6 +105,7 @@ body {
   padding: 10px;
   margin-bottom:10px;
 }
+
 /* 画像カルーセル表示 */
 .slider { width: 600px; min-height: 400px; margin: 0 auto 50px;}
 .slider img{ width: 100%; }
@@ -213,7 +214,6 @@ img {
 .l-container.l-container--full {
   max-width: 100%;
   padding: 0;
-
 }
 .l-container {
   margin-right: auto;
