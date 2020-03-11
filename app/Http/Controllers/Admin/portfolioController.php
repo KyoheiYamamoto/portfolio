@@ -23,22 +23,25 @@ class portfolioController extends Controller
         if (!empty($form['image1'])) {
             // リサイズ
             Self::resizeFile($form['image1']);
-            $path1 = $request->file('image1')->store('public/image');
-            $portfolios->image_path1 = basename($path1);
+            $path1 = Storage::disk('s3')->putFile('/',$form['image'],'public');
+            // $path1 = $request->file('image1')->store('public/image');
+            $portfolios->image_path1 = Storage::disk('s3')->url($path);
         } else {
             $portfolios->image_path1 = null;
         }
         if (!empty($form['image2'])) {
             Self::resizeFile($form['image2']);
-            $path2 = $request->file('image2')->store('public/image');
-            $portfolios->image_path2 = basename($path2);
+            $path2 = Storage::disk('s3')->putFile('/',$form['image'],'public');
+            // $path2 = $request->file('image2')->store('public/image');
+            $portfolios->image_path2 = Storage::disk('s3')->url($path);
         } else {
             $portfolios->image_path2 = null;
         }
         if (!empty($form['image3'])) {
             Self::resizeFile($form['image3']);
-            $path3 = $request->file('image3')->store('public/image');
-            $portfolios->image_path3 = basename($path3);
+            $path3 = Storage::disk('s3')->putFile('/',$form['image'],'public');
+            // $path3 = $request->file('image3')->store('public/image');
+            $portfolios->image_path3 = Storage::disk('s3')->url($path);
         } else {
             $portfolios->image_path3 = null;
         }
