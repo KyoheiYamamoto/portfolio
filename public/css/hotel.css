@@ -41,7 +41,7 @@ body {
     padding: 0;
     font-size: 40px;
   }
-  
+
 /*--create.blede.phpのスタイル変更*/
 .stars{
   display: flex;
@@ -217,6 +217,7 @@ img {
   max-width: 100%;
   padding: 0;
 }
+
 .l-container {
   margin-right: auto;
   margin-left: auto;
@@ -253,7 +254,7 @@ img {
 
 /* フッターのスタイル */
 .l-footer {
-  background-color: #656c6e;
+  background-color: #fff;
   padding: 35px 0;
 }
 .l-container.l-container--narrow {
@@ -279,8 +280,9 @@ img {
   padding: 0 7%;
 }
 .l-footer .m-copyRight {
-  float: right;
-  margin-top: 35px;
+    margin-top: 2rem;
+    font-size: 12px;
+    color: black;
 }
 .m-copyRight {
   margin: 0;
@@ -435,4 +437,45 @@ element.style {
 }
   .rows.col-md-8 mx-auto .col-md-8 .col-md-4{
     background-color: #fff;
+}
+
+.m-shareButtons-item {
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    font-size: 1rem;
+    letter-spacing: normal;
+    word-spacing: normal;
+    margin: 0 15px;
+}
+.m-button--twitter {
+  color: #70bdd3;
+  border-color: #70bdd3;
+}
+.m-button--facebook {
+  color: #4871a9;
+  border-color: #4871a9;
+}
+
+/* ページトップ戻る */
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 77%;
+}
+#page-top a {
+  background: #666;
+  text-decoration: none;
+  color: #fff;
+  width: 100px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+#page-top a:hover {
+  text-decoration: none;
+  background: #999;
 }

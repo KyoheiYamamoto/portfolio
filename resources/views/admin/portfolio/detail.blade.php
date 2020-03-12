@@ -9,6 +9,7 @@
                         <li><a href="#">HOTEL</a></li>
                         <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">Contact</a>
                         </li>
+
                     </ul>
                 </div>
                 <div class="row">
@@ -21,7 +22,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-md-2">wifi</label>
+                                <label class="col-md-2">wifiの有無</label>
                                 <div class="col-md-10">
                                     {{ $portfolio->presence }}
                                 </div>
@@ -52,7 +53,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-md-2" for="body">URL・電話番号</label>
+                                <label class="col-md-2" for="body">URL</label>
                                 <div class="col-md-10">
                                     {{ $portfolio->tel }}
                                 </div>
@@ -83,6 +84,14 @@
                   <a href="{{ action('Admin\portfolioController@index') }}" class="m-button m-button--back">BACK TO TOP</a>
                 </div>
              </section>
+             <div class="card-contents">
+                <h3 id=“news” class="text-title">NEWS</h3>
+                <ul class="information-list">
+                    <li>2017/05/01 ああああ</li>
+                    <li>2017/04/01 あああああ</li>
+                    <li>2017/01/01 あああああ</li>
+                </ul>
+            </div>
             <div class="l-footerNav">
                 <div class="l-container l-container--full">
                     <nav class="m-navigation m-navigation--center">

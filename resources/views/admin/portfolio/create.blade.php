@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>宿泊先登録</h2>
+                <h2>宿泊先の投稿</h2>
                 <form action="{{ action('Admin\portfolioController@create') }}" method="post" enctype="multipart/form-data">
                     @if (count($errors) > 0)
                     <ul>
@@ -20,7 +20,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-3">wifi</label>
+                        <label class="col-md-3">wifiの有無</label>
                         <div class="col-md-4 form-check radio-inline">
                             <!---->
                             <input type="radio" class="form-check-input" name="presence" id="yes" value='有'
