@@ -45,6 +45,7 @@ class portfolioController extends Controller
         } else {
             $portfolios->image_path3 = null;
         }
+
         // フォームから送信されてきた_tokenを削除する
         unset($form['_token'], $form['image1'], $form['image2'], $form['image3']);
         // フォームから送信されてきたimageを削除する
@@ -62,7 +63,7 @@ class portfolioController extends Controller
         $image
             ->resize(300, 400)
             // リサイズ画像の保存する
-            ->save(public_path() . '/storage/' . $file->hashName());
+             ->save(public_path() . '/storage/' . $file->hashName());
     }
     public function index(Request $request)
     {
