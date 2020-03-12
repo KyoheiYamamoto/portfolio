@@ -41,6 +41,7 @@ body {
     padding: 0;
     font-size: 40px;
   }
+  
 /*--create.blede.phpのスタイル変更*/
 .stars{
   display: flex;
@@ -76,6 +77,7 @@ body {
  /*--index.blede.phpのスタイル変更*/
 .col-md-2{
   font-size: 20px;
+
 }
 /*--検索ボタンのスタイル変更*/
 .btn-primarys {
