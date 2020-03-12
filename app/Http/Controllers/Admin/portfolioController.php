@@ -25,7 +25,7 @@ class portfolioController extends Controller
             Self::resizeFile($form['image1']);
             $path1 = Storage::disk('s3')->putFile('/',$form['image1'],'public');
             // $path1 = $request->file('image1')->store('public/image');
-            $portfolios->image_path1 = Storage::disk('s3')->url($path);
+            $portfolios->image_path1 = Storage::disk('s3')->url($path1);
         } else {
             $portfolios->image_path1 = null;
         }
@@ -33,7 +33,7 @@ class portfolioController extends Controller
             Self::resizeFile($form['image2']);
             $path2 = Storage::disk('s3')->putFile('/',$form['image2'],'public');
             // $path2 = $request->file('image2')->store('public/image');
-            $portfolios->image_path2 = Storage::disk('s3')->url($path);
+            $portfolios->image_path2 = Storage::disk('s3')->url($path2);
         } else {
             $portfolios->image_path2 = null;
         }
@@ -41,7 +41,7 @@ class portfolioController extends Controller
             Self::resizeFile($form['image3']);
             $path3 = Storage::disk('s3')->putFile('/',$form['image3'],'public');
             // $path3 = $request->file('image3')->store('public/image');
-            $portfolios->image_path3 = Storage::disk('s3')->url($path);
+            $portfolios->image_path3 = Storage::disk('s3')->url($path3);
         } else {
             $portfolios->image_path3 = null;
         }
