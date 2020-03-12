@@ -460,13 +460,20 @@ element.style {
 
 /* ページトップ戻る */
 #page-top {
-  position: fixed;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: url(../img/backTop@2x.png) no-repeat;
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
   bottom: 20px;
   right: 20px;
   font-size: 77%;
 }
 #page-top a {
-  background: #666;
+  background: #ef3f98;
   text-decoration: none;
   color: #fff;
   width: 100px;
