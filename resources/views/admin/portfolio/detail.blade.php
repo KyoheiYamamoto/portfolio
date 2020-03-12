@@ -64,16 +64,19 @@
                         @if ($portfolio->image_path1)
                         <div class="img-content">
                             <img src="{{ $portfolio->image_path1 }}" alt="image" class="img-size" />
+                            <!-- <img src="{{ asset('storage/image/' . $portfolio->image_path1) }}" alt="image" class="img-size" /> -->
                         </div>
                         @endif
                         @if ($portfolio->image_path2)
                         <div class="img-content">
                             <img src="{{  $portfolio->image_path2 }}" alt="image" class="img-size" />
+                            <!-- <img src="{{ asset('storage/image/' . $portfolio->image_path2) }}" alt="image" class="img-size" /> -->
                         </div>
                         @endif
                         @if ($portfolio->image_path3)
                         <div class="img-content">
                             <img src="{{  $portfolio->image_path3 }}" alt="image" class="img-size" />
+                            <!-- <img src="{{ asset('storage/image/' . $portfolio->image_path3) }}" alt="image" class="img-size" /> -->
                         </div>
                         @endif
                     </div>
