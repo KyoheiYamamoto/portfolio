@@ -25,7 +25,6 @@ class portfolioController extends Controller
             Self::resizeFile($form['image1']);
 
             $path1 = Storage::disk('s3')->putFile('/',$form['image1'],'public');
-            \Debugbar::info($path1);
             // $path1 = $request->file('image1')->store('public/image');
             $portfolios->image_path1 = Storage::disk('s3')->url($path1);
         } else {
