@@ -9,7 +9,6 @@
                         <li><a href="#">HOTEL</a></li>
                         <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">Contact</a>
                         </li>
-
                     </ul>
                 </div>
                 <div class="row">
@@ -81,6 +80,12 @@
                         @endif
                     </div>
                 </div>
+            </div>
+            <div class ="m-shareButtons-item">
+            <a class="m-button m-button--twitter" href="{{ action('Admin\portfolioController@delete', ['id' => $portfolio->id]) }}">削除</a>
+            </div>
+            <div class ="m-shareButtons-item">
+            <a class="m-button m-button--facebook" href="{{ action('Admin\portfolioController@edit', ['id' => $portfolio->id]) }}">編集</a>
             </div>
             <section class="l-section l-section--backToTop">
                 <div class="m-backToTop">

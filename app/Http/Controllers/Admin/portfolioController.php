@@ -115,6 +115,7 @@ class portfolioController extends Controller
         $portfolios->delete();
         return redirect('admin/portfolio/');
     }
+    
     public function detail(Request $request)
     {
         // portfolio Modelからデータを取得する

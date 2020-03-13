@@ -479,3 +479,14 @@ element.style {
   text-decoration: none;
   background: #999;
 }
+
+. {
+  display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    font-size: 1rem;
+    letter-spacing: normal;
+    word-spacing: normal;
+    margin: 0 15px;
+}
