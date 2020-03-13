@@ -77,6 +77,7 @@ class portfolioController extends Controller
         }
         return view('admin.portfolio.index', ['posts' => $posts, 'cond_title' => $cond_title]);
     }
+
     public function edit(Request $request)
     {
         // News Modelからデータを取得する
@@ -86,11 +87,14 @@ class portfolioController extends Controller
         }
         return view('admin.portfolio.edit', ['portfolios_form' => $portfolios]);
     }
+
     public function update(Request $request)
     {
         // Validationをかける
         $this->validate($request, Portfolio::$rules);
+        // portfolio Modelからデータを取得する
         $portfolios = Portfolio::find($request->id);
+        // 送信されてきたフォームデータを格納する
         $portfolios_form = $request->all();
         if (isset($portfolios_form['image'])) {
             $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
@@ -115,7 +119,7 @@ class portfolioController extends Controller
         $portfolios->delete();
         return redirect('admin/portfolio/');
     }
-    
+
     public function detail(Request $request)
     {
         // portfolio Modelからデータを取得する
