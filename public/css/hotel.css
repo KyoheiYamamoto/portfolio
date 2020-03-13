@@ -461,12 +461,12 @@ element.style {
 /* ページトップ戻る */
 #page-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 180px;
   font-size: 77%;
 }
 #page-top a {
-  background: pink;
+  background: rgb(0, 255, 76);
   text-decoration: none;
   color: #fff;
   width: 90px;

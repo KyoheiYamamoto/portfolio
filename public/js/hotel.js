@@ -53,7 +53,7 @@ $(function() {
   topBtn.hide();
   //スクロールが100に達したらボタン表示
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 10) {
+      if ($(this).scrollTop() > 1000) {
           topBtn.fadeIn();
       } else {
           topBtn.fadeOut();
