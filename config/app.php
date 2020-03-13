@@ -160,6 +160,8 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        
+        Barryvdh\Debugbar\ServiceProvider::class,
 
         // Package Service Providers...
 
@@ -219,5 +221,6 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Image' => Intervention\Image\Facades\Image::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 ];
