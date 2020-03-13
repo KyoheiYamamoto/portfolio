@@ -64,7 +64,7 @@ class portfolioController extends Controller
         $image
             ->resize(300, 400)
             // リサイズ画像の保存する
-             ->save(public_path() . '/storage/' . $file->hashName());
+             ->save(public_path() . 's3' . $file->hashName());
     }
     public function index(Request $request)
     {
