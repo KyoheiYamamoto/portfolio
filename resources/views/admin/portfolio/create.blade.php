@@ -83,12 +83,10 @@
                                         // init
                                         // class='cropper-example-1のimgタグに適用'
                                         var $image = $('.cropper-example-1 > img'),replaced;
-
                                         //crop option
                                         // id='imgに適用'
                                         $('#img').cropper({
-                                        aspectRatio: 3 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
-
+                                        aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
                                         });
                                     </script>
 
@@ -111,12 +109,10 @@
                                         // init
                                         // class='cropper-example-1のimgタグに適用'
                                         var $image = $('.cropper-example-1 > img'),replaced;
-
                                         //crop options
                                         // id='imgに適用'
                                         $('#img').cropper({
-                                        aspectRatio: 3 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
-
+                                        aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
                                         });
                                     </script>
 
@@ -138,12 +134,10 @@
                                         // init
                                         // class='cropper-example-1のimgタグに適用'
                                         var $image = $('.cropper-example-1 > img'),replaced;
-
                                         //crop options
                                         // id='imgに適用'
                                         $('#img').cropper({
-                                        aspectRatio: 3 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
-
+                                        aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
                                         });
                                     </script>
 
