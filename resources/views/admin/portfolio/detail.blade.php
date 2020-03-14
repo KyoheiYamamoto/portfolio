@@ -98,33 +98,48 @@
                     <li>2017/05/01 ああああ</li>
                     <li>2017/04/01 あああああ</li>
                     <li>2017/01/01 あああああ</li>
+                    <li>2017/05/01 ああああ</li>
+                    <li>2017/04/01 あああああ</li>
+                    <li>2017/01/01 あああああ</li><li>2017/05/01 ああああ</li>
+                    <li>2017/04/01 あああああ</li>
+                    <li>2017/01/01 あああああ</li><li>2017/05/01 ああああ</li>
+                    <li>2017/04/01 あああああ</li>
+                    <li>2017/01/01 あああああ</li><li>2017/05/01 ああああ</li>
                 </ul>
             </div>
+
+            <footer class="l-footer">
+                <div class="l-container l-container--narrow">
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+                <p id="page-top"><a href="#wrap">PAGE TOP</a></p>
+
+                    <div class="box-social">
+                        <h4 class="footer-titles">follow us</h4>
+                        <div class="m-shareButtons-item">
+                            <a class="m-button m-button--twitter" href="https://twitter.com/davidkyohei" target="_blank" onclick="ga('send', 'event', 'share_twitter', 'click', 'https://pas-pol.jp');">Share on Twitter</a>
+                        </div>
+                        <div class="m-shareButtons-item">
+                            <a class="m-button m-button--facebook" href="https://www.facebook.com/share.php?u=https://pas-pol.jp" target="_blank" onclick="ga('send', 'event', 'share_facebook', 'click', 'https://pas-pol.jp');">Share on Facebook</a>
+                        </div>
+                    </div>
+                    <div class="m-copyRight">
+                        <small>Copyright © All rights Reserved.</small>
+                    </div>
+                </div>
+            </footer>
             <div class="l-footerNav">
                 <div class="l-container l-container--full">
                     <nav class="m-navigation m-navigation--center">
-                        <ul>
-                            <!-- Topページに戻る -->
+                    <ul>
                         <li><a href="{{ action('Admin\portfolioController@index') }}">TOP</a></li>
-                        <li><a href="{{ action('Admin\portfolioController@index') }}">About</a></li>
-                        <li><a href="#">HOTEL</a></li>
-                        <li><a href="{{ action('Admin\portfolioController@index') }}">NEWS</a></li>
-                        <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">お問い合わせ</a>
+                        <li><a href="#">About</a></li>
+                        <li><a href="{{ action('Admin\portfolioController@index','#hotel') }}">HOTEL</a></li>
+                        <li><a href="{{ action('Admin\portfolioController@index','#news') }}">NEWS</a></li>
+                        <li><a href="https://forms.gle/X35ZU2fz9jBxLhjU7">Contact</a>
                         </li>
-                        </ul>
+                    </ul>
                     </nav>
                 </div>
             </div>
-        <footer class="l-footer">
-            <div class="l-container l-container--narrow">
-                <h1 class="m-siteLogo m-siteLogo--small">
-                    <a href="https://pas-pol.jp">aaa</a>
-                </h1>
-
-                <div class="m-copyRight">
-                    <small>aaaaa</small>
-                </div>
-            </div>
-        </footer>
         @endsection
     </div>

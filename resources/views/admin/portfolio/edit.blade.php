@@ -87,7 +87,7 @@
                                         //crop option
                                         // id='imgに適用'
                                         $('#img').cropper({
-                                        aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
+                                        aspectRatio: 3 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
 
                                         });
                                     </script>
@@ -115,7 +115,7 @@
                                         //crop options
                                         // id='imgに適用'
                                         $('#img').cropper({
-                                        aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
+                                        aspectRatio: 3 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
 
                                         });
                                     </script>
@@ -142,7 +142,7 @@
                                         //crop options
                                         // id='imgに適用'
                                         $('#img').cropper({
-                                        aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
+                                        aspectRatio: 3 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
 
                                         });
                                     </script>
@@ -184,6 +184,11 @@
                         </ul>
                     </div>
                 </div>
+                <section class="l-section l-section--backToTop">
+                <div class="m-backToTop">
+                  <a href="{{ action('Admin\portfolioController@index') }}" class="m-button m-button--back">BACK TO TOP</a>
+                </div>
+             </section>
             </div>
         </div>
     </div>
