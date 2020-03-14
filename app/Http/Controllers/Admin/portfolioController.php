@@ -62,7 +62,7 @@ class portfolioController extends Controller
         (file_get_contents($file->getRealPath()));
         $image = \Image::make(file_get_contents($file->getRealPath()));
         $image
-             ->resize(300, 400) ->save(public_path() . '/hotels3' . $file->hashName());
+             ->resize(30, 40) ->save(public_path() . '/hotels3' . $file->hashName());
             // ->resize(30, 40) ->save(public_path() . '/storage/' . $file->hashName());
     }
     public function index(Request $request)
