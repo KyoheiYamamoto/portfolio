@@ -81,7 +81,6 @@ $(document).ready(function () {
             //縦長画像の場合の処理
           }
     });
-    
     $(function(){
 
       var imgWidth = $('.img-content').width();

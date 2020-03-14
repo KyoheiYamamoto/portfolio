@@ -15,7 +15,8 @@
                     </ul>
                     @endif
                     <div class="form-group row">
-                        <label class="col-md-3" for="title">宿名</label>
+                        <label class="col-md-3" for="title">宿名
+                            <p class="hissu">※正式名称で記入してください</p></label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="title" value="{{ old('title') }}">
                         </div>
@@ -35,18 +36,18 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-3" for="body">レビュー</label>
+                        <label class="col-md-3" for="body">レビュー<br><p class="hissu">※必ず記入してください</p></label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-3" for="body">設備・備品</label>
+                        <label class="col-md-3" for="body">設備・備品<br><p class="hissu">※必ず記入してください</p></label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="amenities" rows="20">{{ old('amenities') }}</textarea>
                         </div>
                     </div>
-                    <label class="col-md-7" for="body">評価</label>
+                    <label class="col-md-7" for="body">評価<br><p class="hissu">※必ず記入してください</p></label>
                     <div class="stars">
                         <input id="star5" type="radio" name="star" value="5" />
                         <label for="star5">★</label>
@@ -61,10 +62,11 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="col-md-3" for="title">画像</label>
+                        <label class="col-md-3" for="title">画像<br><p class="hissu">※必ず1枚はアップロードをしてください(2MB以下)</p></label>
                         <div class="col-md-10">
 
                         <!-- 1枚目の画像 -->
+
                         <input type="file" class="form-control-file" name="image1">
                         <!-- CSS -->
                         <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/1.0.0/cropper.min.css" rel="stylesheet" type="text/css" media="all"/>
@@ -84,7 +86,6 @@
                                         // class='cropper-example-1のimgタグに適用'
                                         var $image = $('.cropper-example-1 > img'),replaced;
                                         //crop option
-                                        // id='imgに適用'
                                         $('#img').cropper({
                                         aspectRatio: 4 / 4 // ここでアスペクト比の調整 ワイド画面にしたい場合は 16 / 9
                                         });
