@@ -150,5 +150,8 @@ return [
         'title' => '宿名',
         'body' => 'レビュー',
         'star' => '評価',
+        'image_path1' => '画像のアップロード',
+        'amenities' => '設備・備品',
+
         ],
 ];

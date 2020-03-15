@@ -17,7 +17,7 @@ class CreateHistoriesTable extends Migration
             $table->increments('id');
             $table->integer('portfolio_id');
             $table->string('edited_at');
-
+            $table->string('amenities');
             $table->timestamps();
         });
     }

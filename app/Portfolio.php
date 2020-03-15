@@ -12,10 +12,7 @@ class Portfolio extends Model
     public static $rules = [
         'title' => 'required',
         'body' => 'required',
-        'prefecture' => 'required',
-        'prefecture_code' => 'required',
-        'tel' => 'required',
-        'address' => 'required',
+        
         'presence' => 'required',
         'amenities' => 'required',
         'star' => 'required',

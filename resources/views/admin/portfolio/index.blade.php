@@ -69,9 +69,9 @@
                         <div class="form-group row">
                             @if ($portfolios->image_path1)
                             <div class="img-contents">
+                            <img src="{{ $portfolios->image_path1 }}" alt="image"class="img-size" />
                                 <a href="{{ action('Admin\portfolioController@detail', ['id' => $portfolios->id]) }}">
-                                <img src="{{ $portfolios->image_path1 }}" alt="image"
-                                    class="img-size" />
+
                                     <!-- <img src="{{ asset('storage/image/' . $portfolios->image_path1) }}" alt="image"
                                     class="img-size" /> -->
                                 </a>

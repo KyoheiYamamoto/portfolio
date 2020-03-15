@@ -11,6 +11,10 @@ class History extends Model
     public static $rules = [
         'portfolios_id' => 'required',
         'edited_at' => 'required',
+        
+        'presence' => 'required',
+        'amenities' => 'required',
+        'star' => 'required',
     ];
 
     protected $guarded = ['id'];
