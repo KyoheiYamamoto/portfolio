@@ -481,8 +481,8 @@ div {
 .m-shareButtons-items {
   display: inline-block;
   vertical-align: top;
-  *display: inline;
-  *zoom: 1;
+  display: inline;
+  zoom: 1;
   font-size: 1rem;
   letter-spacing: normal;
   word-spacing: normal;

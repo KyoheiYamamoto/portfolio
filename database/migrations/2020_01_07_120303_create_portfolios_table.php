@@ -20,11 +20,11 @@ class CreatePortfoliosTable extends Migration
             $table->string('image_path2')->nullable();
             $table->string('image_path3')->nullable(); // 画像のパスを保存するカラム
             $table->timestamps();
-            $table->string('zip', 10)->nullable()->comment('郵便番号');
+            $table->string('zip', 10000)->nullable()->comment('郵便番号');
             $table->tinyInteger('prefecture_code')->unsigned()->nullable()->comment('都道府県コード : JIS都道府県コード');
-            $table->string('prefecture', 40)->nullable()->comment('都道府県名 フリーテキスト検索で使用');
+            $table->string('prefecture', 10000)->nullable()->comment('都道府県名 フリーテキスト検索で使用');
             $table->string('address')->nullable()->comment('住所2');
-            $table->string('tel', 20)->nullable()->comment('電話番号');
+            $table->string('tel', 10000)->nullable()->comment('電話番号');
             $table->string('presence')->comment('wifi');
             $table->string('amenities')->comment('設備・備品');
             $table->string('star')->comment('評価');
