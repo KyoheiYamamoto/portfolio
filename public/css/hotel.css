@@ -418,12 +418,13 @@ div {
       letter-spacing: 0.1em;
       margin: 0 auto;
 }
-a {
-  color: #0bd;
+.a {
+ color: #0bd;
 }
 
 /* TOPページに戻るボタン */
-element.style {
+
+.element.style {
 }
 .l-section.l-section--backToTop {
     padding: 110px 0 140px;
