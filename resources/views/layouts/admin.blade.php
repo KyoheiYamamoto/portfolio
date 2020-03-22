@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- CSRF Token -->
-        {{-- 後の章で説明します --}}
         <meta name="csrf-token" content="{{ csrf_token() }}">
         {{-- 各ページごとにtitleタグを入れるために@yieldで空けておきます。 --}}
         <title>@yield('title')</title>
@@ -31,8 +30,8 @@
     <body>
         <div id="app">
             {{-- 画面上部に表示するナビゲーションバーです。 --}}
-            <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
-                <div class="container">
+            <!-- <nav class="navbar navbar-expand-md navbar-dark navbar-laravel"> -->
+                <!-- <div class="container">
                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
@@ -40,7 +39,7 @@
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </button> -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav mr-auto">

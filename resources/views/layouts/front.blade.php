@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- CSRF Token -->
-         {{-- 後の章で説明します --}}
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         {{-- 各ページごとにtitleタグを入れるために@yieldで空けておきます。 --}}

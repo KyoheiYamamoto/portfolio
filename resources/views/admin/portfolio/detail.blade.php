@@ -1,9 +1,10 @@
 @extends('layouts.admin')
 @section('title', '宿泊先詳細')
 @section('content')
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <div class="container">
                 <div class="row">
-                    <ul class="header-navigation">
+                    <ul class="header-navigations">
                     <li><a href="{{ action('Admin\portfolioController@index') }}">TOP</a></li>
                         <li><a href="#">News</a></li>
                         <li><a href="#">HOTEL</a></li>
@@ -81,10 +82,10 @@
                     </div>
                 </div>
             </div>
-            <div class ="m-shareButtons-item">
+            <div class ="m-shareButtons-items">
             <a class="m-button m-button--twitter" href="{{ action('Admin\portfolioController@delete', ['id' => $portfolio->id]) }}">削除</a>
             </div>
-            <div class ="m-shareButtons-item">
+            <div class ="m-shareButtons-items">
             <a class="m-button m-button--facebook" href="{{ action('Admin\portfolioController@edit', ['id' => $portfolio->id]) }}">編集</a>
             </div>
             <section class="l-section l-section--backToTop">
@@ -116,10 +117,13 @@
                     <div class="box-social">
                         <h4 class="footer-titles">follow us</h4>
                         <div class="m-shareButtons-item">
-                            <a class="m-button m-button--twitter" href="https://twitter.com/davidkyohei" target="_blank" onclick="ga('send', 'event', 'share_twitter', 'click', 'https://pas-pol.jp');">Share on Twitter</a>
+                            <a class="m-button m-button--twitter" href="https://twitter.com/davidkyohei" target="_blank" onclick="ga('send', 'event', 'share_twitter', 'click', 'https://pas-pol.jp');"><i class="fab fa-twitter fa-3x" ></i></a>
                         </div>
                         <div class="m-shareButtons-item">
-                            <a class="m-button m-button--facebook" href="https://www.facebook.com/share.php?u=https://pas-pol.jp" target="_blank" onclick="ga('send', 'event', 'share_facebook', 'click', 'https://pas-pol.jp');">Share on Facebook</a>
+                            <a class="m-button m-button--facebook" href="https://www.facebook.com/share.php?u=https://pas-pol.jp" target="_blank" onclick="ga('send', 'event', 'share_facebook', 'click', 'https://pas-pol.jp');"><i class="fab fa-facebook-square fa-3x"></i></a>
+                        </div>
+                        <div class="m-shareButtons-item">
+                            <a class="m-button m-button--email" href="https://forms.gle/X35ZU2fz9jBxLhjU7" ><i class="fas fa-mail-bulk fa-3x"></i></a>
                         </div>
                     </div>
                     <div class="m-copyRight">

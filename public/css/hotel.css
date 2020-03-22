@@ -76,9 +76,12 @@ body {
 }
  /*--index.blede.phpのスタイル変更*/
 .col-md-2{
-  font-size: 20px;
-
+  font-size: 25px;
 }
+.col-md-10{
+  font-size: 20px;
+}
+
 /*--検索ボタンのスタイル変更*/
 .btn-primarys {
   color: #fff;
@@ -123,10 +126,17 @@ img {
 
 /* headermenu */
 .header-navigation {
-  width: 100%;
+  width: 95%;
   background-color: #fff;
   padding: 20px 0;
-
+  position: relative;
+}
+.header-navigations {
+  width: 65%;
+  background-color: #fff;
+  padding: 20px 0;
+  position: relative;
+  left:200px;
 }
 .header-navigation:after{
   clear: both;
@@ -139,11 +149,22 @@ img {
   text-align: center;
   list-style-type: none;
   font-size: 20px;
-
 }
 .header-navigation li a {
   color: #333;
   text-decoration: none;
+}
+.header-navigations li {
+  float: left;
+  padding: 0 50px;
+  text-align: center;
+  list-style-type: none;
+  font-size: 20px;
+}
+.header-navigations li a {
+  color: #333;
+  text-decoration: none;
+  right:30px;
 }
 
 /* infomation */
@@ -413,7 +434,7 @@ element.style {
 }
 .m-button--back {
   width: 210px;
-  background: url(../img/button-arrow-back@2x.png) no-repeat;
+  background:  no-repeat;
   background-size: 7px 12px;
   background-position: 14px 50%;
 }
@@ -448,7 +469,24 @@ element.style {
     letter-spacing: normal;
     word-spacing: normal;
     margin: 0 15px;
+    position: relative;
+
 }
+
+.m-shareButtons-items {
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1;
+  font-size: 1rem;
+  letter-spacing: normal;
+  word-spacing: normal;
+  margin: 0 15px;
+  position: relative;
+  left: 400px;
+  top:50px;
+}
+
 .m-button--twitter {
   color: #70bdd3;
   border-color: #70bdd3;
