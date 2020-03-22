@@ -123,7 +123,7 @@
                             <a class="m-button m-button--facebook" href="https://www.facebook.com/share.php?u=https://pas-pol.jp" target="_blank" onclick="ga('send', 'event', 'share_facebook', 'click', 'https://pas-pol.jp');"><i class="fab fa-facebook-square fa-3x"></i></a>
                         </div>
                         <div class="m-shareButtons-item">
-                            <a class="m-button m-button--email" href="https://forms.gle/X35ZU2fz9jBxLhjU7" "><i class="fas fa-mail-bulk fa-3x"></i></a>
+                            <a class="m-button m-button--email" href="https://forms.gle/X35ZU2fz9jBxLhjU7" ><i class="fas fa-mail-bulk fa-3x"></i></a>
                         </div>
                     </div>
                     <div class="m-copyRight">
