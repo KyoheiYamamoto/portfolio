@@ -4,10 +4,12 @@ body {
   background-color: #efefef;
   color: #333;
 }
+
 .navbar-laravel {
   background-color: #000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
 .navbar-brand {
   color: #fff !important;
 }
@@ -15,8 +17,9 @@ body {
   color: #fff !important;
 }
 .table-dark {
-  color: #fff;
+ color: #fff;
 }
+
 .list-group-item {
   border-color: #fff;
   background-color: #000;
@@ -78,6 +81,7 @@ body {
 .col-md-2{
   font-size: 25px;
 }
+
 .col-md-10{
   font-size: 20px;
 }
@@ -264,8 +268,8 @@ img {
 .m-navigation li {
   display: inline-block;
   vertical-align: top;
-  *display: inline;
-  *zoom: 1;
+  display: inline;
+  zoom: 1;
   font-size: 1rem;
   letter-spacing: normal;
   word-spacing: normal;
@@ -496,7 +500,7 @@ element.style {
   border-color: #4871a9;
 }
 
-/* ページトップ戻る */
+/* ページトップ戻 */
 #page-top {
   position: fixed;
   bottom: 30px;
@@ -514,7 +518,7 @@ element.style {
   border-radius: 5px;
 }
 #page-top a:hover {
-  text-decoration: none;ｓ
+  text-decoration: none;
   background: #999;
 }
 
