@@ -85,6 +85,12 @@ body {
 .col-md-10{
   font-size: 20px;
 }
+.url a{
+  color: #3490dc;
+text-decoration: none;
+background-color: transparent;
+}
+
 
 /*--検索ボタンのスタイル変更*/
 .btn-primarys {
