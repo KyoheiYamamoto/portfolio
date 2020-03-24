@@ -96,19 +96,13 @@
              <div class="card-contents">
                 <h3 id=“news” class="text-title">NEWS</h3>
                 <ul class="information-list">
-                    <li>2017/05/01 ああああ</li>
-                    <li>2017/04/01 あああああ</li>
-                    <li>2017/01/01 あああああ</li>
-                    <li>2017/05/01 ああああ</li>
-                    <li>2017/04/01 あああああ</li>
-                    <li>2017/01/01 あああああ</li><li>2017/05/01 ああああ</li>
-                    <li>2017/04/01 あああああ</li>
-                    <li>2017/01/01 あああああ</li><li>2017/05/01 ああああ</li>
-                    <li>2017/04/01 あああああ</li>
-                    <li>2017/01/01 あああああ</li><li>2017/05/01 ああああ</li>
+                    <li>2020/03/22 Tokyo Guest House Ouji Music Loungeを追加しました</li>
+                    <li>2020/03/21 カプセルイン札幌を追加しました</li>
+                    <li>2020/03/20 東京有明BAY HOTELを追加しました</li>
+                    <li>2020/03/19 ああああ</li>
                 </ul>
             </div>
-
+            
             <footer class="l-footer">
                 <div class="l-container l-container--narrow">
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
