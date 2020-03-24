@@ -45,6 +45,23 @@ body {
     font-size: 40px;
   }
 
+  .subtitle {
+    float: left;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: -100px;
+    font-size: 24px;
+  }
+
+  .btn-primaryi{
+    color: #fff;
+    background-color: #3490dc;
+    border-color: #3490dc;
+    margin-left: 40px;
+    padding: 0.75rem 0.75rem;
+    border-radius: 0.25rem;
+  }
+
 /*--create.blede.phpのスタイル変更*/
 .stars{
   display: flex;

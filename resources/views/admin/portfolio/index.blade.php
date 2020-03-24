@@ -4,7 +4,8 @@
 <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 <div class="container">
     <div class="row">
-        <h2>hoteL</h2>
+        <h2>Barato</h2>
+        <p class="subtitle">5000円以下で見つかる宿さがし</p>
         <ul class="header-navigation">
             <li><a href="{{ action('Admin\portfolioController@index') }}">TOP</a></li>
             <li><a href="#">About</a></li>
@@ -25,14 +26,9 @@
                     <br>安く手軽に探せる。
                     <br>探しているだけでわくわくする。
                 </p>
-                <p>全国各地のゲストハウスやホテルを
-                    <p>そして、人と人が繋がる
-                        <br>こんな時代だからこそ、
-                        <br>僕たちは、みんなでひとつのせかいを
-                        <br>
-                        <br>泊まることで描いていきたい。
-                    </p>
-                    <p class="m-concept-siteLogo">〇</p>
+                <p>ゲストハウスやホテルを
+                <br>手軽で探せるサービス </p>
+                    <p class="m-concept-siteLogo">Barato</p>
                     <p>それは、自分と世界を広がる
                         <br>宿との出会いができるサービス
                     </p>
@@ -43,7 +39,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <div class="row">
         <div class="col-md-4">
-            <a href="{{ action('Admin\portfolioController@add') }}" role="button" class="btn btn-primary">新規作成する</a>
+            <a href="{{ action('Admin\portfolioController@add') }}" role="button" class=" btn-primaryi">新規作成する</a>
         </div>
         <div class="col-md-8">
             <form action="{{ action('Admin\portfolioController@index') }}" method="get">
@@ -116,7 +112,7 @@
                             <a class="m-button m-button--email" href="https://forms.gle/X35ZU2fz9jBxLhjU7" ><i class="fas fa-mail-bulk fa-3x"></i></a>
                         </div>
                     </div>
-            <div class="m-copyRight">
+                <div class="m-copyRight">
                 <small>Copyright © All rights Reserved.</small>
             </div>
         </div>
