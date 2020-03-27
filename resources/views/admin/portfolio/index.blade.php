@@ -91,7 +91,7 @@
             <li>2020/03/22 Tokyo Guest House Ouji Music Loungeを追加しました</li>
             <li>2020/03/21 カプセルイン札幌を追加しました</li>
             <li>2020/03/20 東京有明BAY HOTELを追加しました</li>
-            <li>2020/03/19 ああああ</li>
+            
         </ul>
     </div>
 
