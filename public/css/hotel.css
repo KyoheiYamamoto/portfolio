@@ -41,7 +41,7 @@ body {
 }
 .container h2 {
     margin: 0 0 30px 0;
-    padding: 0;
+    padding: 0 30px;
     font-size: 40px;
   }
 
@@ -49,7 +49,7 @@ body {
     float: left;
     height: 80px;
     margin-top: 50px;
-    margin-left: -100px;
+    margin-left: -140px;
     font-size: 24px;
   }
 
@@ -153,10 +153,10 @@ img {
 
 /* headermenu */
 .header-navigation {
-  width: 95%;
   background-color: #fff;
   padding: 20px 0;
   position: relative;
+  left: 100px;
 }
 .header-navigations {
   width: 70%;
@@ -172,7 +172,7 @@ img {
 }
 .header-navigation li {
   float: left;
-  padding: 0 70px;
+  padding: 0 50px;
   text-align: center;
   list-style-type: none;
   font-size: 20px;
@@ -204,10 +204,10 @@ img {
 .card-contents {
   padding: 40px;
   display: block;
-  margin-bottom: 20px;
+  margin: 30px 0;
   overflow: hidden;
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: #fff;
 
 }
 
@@ -239,12 +239,13 @@ img {
     height: 54px;
     background-size: 500px 84px;
     margin: 35px auto;
+    font-size: 44px;
  }
 
  /* タイトル文 */
     .m-concept-title {
       text-align: center;
-      font-size: 44px;
+      font-size: 38px;
       font-weight: normal;
       letter-spacing: 0.1em;
       margin: 0 auto;
