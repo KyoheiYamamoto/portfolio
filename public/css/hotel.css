@@ -40,17 +40,19 @@ body {
 
 }
 .container h2 {
-    margin: 0 0 30px 0;
-    padding: 0 30px;
-    font-size: 40px;
+  margin: 0 30px;
+  /* padding: 0px; */
+  font-size: 40px;
+  position: relative;
+  left: 110px;
   }
 
   .subtitle {
     float: left;
     height: 80px;
     margin-top: 50px;
-    margin-left: -140px;
-    font-size: 24px;
+    margin-left: -40px;
+    font-size: 20px;
   }
 
   .btn-primaryi{
