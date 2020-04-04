@@ -119,7 +119,7 @@ class portfolioController extends Controller
         $portfolios->delete();
         return redirect('admin/portfolio/');
     }
-
+    // detail.blade.phpの部分
     public function detail(Request $request)
     {
         // portfolio Modelからデータを取得する

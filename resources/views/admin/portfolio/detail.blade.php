@@ -102,7 +102,6 @@
                     <li>2020/03/19 ああああ</li>
                 </ul>
             </div>
-            
             <footer class="l-footer">
                 <div class="l-container l-container--narrow">
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">

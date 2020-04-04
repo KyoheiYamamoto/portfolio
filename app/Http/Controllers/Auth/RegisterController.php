@@ -31,7 +31,11 @@ class RegisterController extends Controller
      * @var string
      */
     protected $redirectTo = '/home';
-
+    public function redirectPath()
+    {
+        return 'admin/portfolio';
+        //例）return 'costs/index';
+    }
     /**
      * Create a new controller instance.
      */
