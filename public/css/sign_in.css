@@ -1,0 +1,30 @@
+.signinPage {
+  margin-top: 10vh;
+}
+.signinPage .title {
+  margin: 0;
+  text-align: center;
+}
+.signinPage .new_user .form-group {
+  max-width: 500px;
+  margin: 0 auto 1rem;
+}
+.signinPage .new_user .form-group .form-control {
+  background: #f6f8fa;
+}
+.signinPage .loginBtn {
+  padding: 12px;
+  width: 200px;
+  border-radius: 21px;
+  background: #29b744;
+  color: #fff;
+  text-align: center;
+  border: none;
+  margin-top: 20px;
+  opacity: 1;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+.signinPage .loginBtn:hover {
+  opacity: 0.7;
+}

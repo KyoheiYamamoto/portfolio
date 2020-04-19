@@ -1,0 +1,32 @@
+body {
+  overflow: visible;
+}
+
+.sinupPage {
+  margin-top: 10vh;
+  .titleArea {
+    text-align: center;
+    h1 {font-size: 2rem;}
+  }
+  .signupForm {
+    .form-group {
+      margin: 0 auto 1.5rem auto;
+      max-width: 500px;
+      .form-control {
+        background: #f6f8fa;
+      }
+    }
+  }
+  .submitBtn {
+    background: #29b744;
+    color: #fff;
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 90px;
+    transition: opacity .5s;
+    &:hover {
+      opacity: .6;
+    }
+  }
+}
